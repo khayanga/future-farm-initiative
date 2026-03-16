@@ -93,7 +93,9 @@ const positions = [
 const AdvocacyContent = () => {
   return (
     <section className="bg-background mt-6">
+
       {/* Intro strip */}
+      
       <div className="text-foreground px-8 py-12">
         <div className="container flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>

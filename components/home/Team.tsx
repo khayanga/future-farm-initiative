@@ -16,40 +16,40 @@ type TeamMember = {
 
 const team: TeamMember[] = [
   {
-    name: "Amara Osei",
+    name: "Alice Ayuma",
     role: "Founder & Executive Director",
     bio: "Agronomist and systems thinker with 15 years leading agricultural transformation across sub-Saharan Africa.",
-    image: "/person1.jpg",
-    socials: { linkedin: "#", twitter: "#", email: "amara@futurefarms.org" },
+    image: "/alice.jpg",
+    socials: { linkedin: "", email: "aliceaannette96@gmail.com" },
   },
   {
-    name: "Kwame Diallo",
-    role: "Head of Technology",
+    name: "Virgil Khayanga",
+    role: "Head of Technology and Digital Transformation",
     bio: "Building precision agriculture tools that bridge the gap between traditional farming knowledge and modern data systems.",
-    image: "/person2.jpg",
-    socials: { linkedin: "#", email: "kwame@futurefarms.org" },
+    image: "/virgil.jpg",
+    socials: { linkedin: "https://www.linkedin.com/in/virgil-khayanga-113b18262/", email: "devkhayanga@gmail.com" },
   },
-  {
-    name: "Fatima Nkrumah",
-    role: "Market Systems Lead",
-    bio: "Connecting smallholder farmers to structured markets through supply chain innovation and policy advocacy.",
-    image: "/person3.jpg",
-    socials: { linkedin: "#", twitter: "#" },
-  },
-  {
-    name: "Chidi Mensah",
-    role: "Energy & Infrastructure",
-    bio: "Designing solar-powered agri-solutions that reduce operational costs and increase year-round farm productivity.",
-    image: "/person4.jpg",
-    socials: { linkedin: "#", email: "chidi@futurefarms.org" },
-  },
-  {
-    name: "Aisha Tamboli",
-    role: "Indigenous Knowledge Curator",
-    bio: "Preserving and integrating centuries of African agricultural wisdom into modern farm standardization frameworks.",
-    image: "/person1.jpg",
-    socials: { linkedin: "#", twitter: "#" },
-  },
+  // {
+  //   name: "Fatima Nkrumah",
+  //   role: "Market Systems Lead",
+  //   bio: "Connecting smallholder farmers to structured markets through supply chain innovation and policy advocacy.",
+  //   image: "/person3.jpg",
+  //   socials: { linkedin: "#", twitter: "#" },
+  // },
+  // {
+  //   name: "Chidi Mensah",
+  //   role: "Energy & Infrastructure",
+  //   bio: "Designing solar-powered agri-solutions that reduce operational costs and increase year-round farm productivity.",
+  //   image: "/person4.jpg",
+  //   socials: { linkedin: "#", email: "chidi@futurefarms.org" },
+  // },
+  // {
+  //   name: "Aisha Tamboli",
+  //   role: "Indigenous Knowledge Curator",
+  //   bio: "Preserving and integrating centuries of African agricultural wisdom into modern farm standardization frameworks.",
+  //   image: "/person1.jpg",
+  //   socials: { linkedin: "#", twitter: "#" },
+  // },
  
 ];
 
@@ -85,12 +85,12 @@ const TeamSection = () => {
                 style={{ animationDelay: `${index * 80}ms` }}
               >
                 {/* Image */}
-                <div className="relative w-full aspect-4/3 overflow-hidden">
+                <div className="relative w-full h-82 overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
                   {/* linear overlay on hover for socials */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

@@ -18,19 +18,19 @@ const contactDetails = [
   {
     icon: <Mail className="w-5 h-5" />,
     label: "Email Us",
-    value: "info@futurefarms.org",
-    href: "mailto:info@futurefarms.org",
+    value: "futurefarms@gmail.com",
+    href: "mailto:futurefarms@gmail.com",
   },
   {
     icon: <Phone className="w-5 h-5" />,
     label: "Call Us",
-    value: "+254 700 000 000",
-    href: "tel:+254700000000",
+    value: "+254757721222",
+    href: "tel:+254757721222",
   },
   {
     icon: <MapPin className="w-5 h-5" />,
     label: "Find Us",
-    value: "Nairobi, Kenya · Kigali, Rwanda",
+    value: "Nairobi, Kenya" ,
     href: "#",
   },
 ];
@@ -46,13 +46,22 @@ const page = () => {
   };
 
   return (
-    <section className="bg-background px-8 py-20">
+    <section className="bg-background rounded-md  px-8 py-12">
       <div className="container">
+
+        <div className="mb-6 md:mb-12 max-w-3xl">
+          <h1 className="text-primary text-2xl  ">Contact Us</h1>
+          <p className="text-muted-foreground text-md leading-relaxed  md:text-left">
+            Have questions or want to learn more about the Future Farms Initiative? Fill out the form below and we'll get back to you as soon as possible.
+          </p>
+        </div>
+
+        
         <ScrollReveal>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          <div className="flex flex-col gap-8 md:flex-row lg:flex-row md:gap-16">
 
             {/* ── LEFT: Form ── */}
-            <div className="lg:col-span-7">
+            <div className="space ">
               {submitted ? (
                 <div className="flex flex-col items-start gap-6 py-16">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
@@ -81,7 +90,7 @@ const page = () => {
                     <p className="text-xs font-bold text-primary uppercase tracking-widest mb-5">
                       Your Details
                     </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       {/* First Name */}
                       <div className="relative">
                         <label className={`absolute left-4 transition-all duration-200 pointer-events-none text-muted-foreground ${focused === "fname" ? "top-2 text-[10px] text-primary font-semibold uppercase tracking-widest" : "top-1/2 -translate-y-1/2 text-sm"}`}>
@@ -140,7 +149,7 @@ const page = () => {
                   </div>
 
                   {/* Reason */}
-                  <div>
+                  <div >
                     <p className="text-xs font-bold text-primary uppercase tracking-widest mb-4">
                       Reason for Contact
                     </p>
@@ -193,7 +202,7 @@ const page = () => {
             </div>
 
             {/* ── RIGHT: Sidebar ── */}
-            <div className="lg:col-span-5 flex flex-col gap-8">
+            <div className=" flex flex-col gap-8">
 
               {/* Contact details card */}
               <div className="rounded-md bg-foreground border border-white/5 p-8 relative overflow-hidden">
@@ -241,7 +250,7 @@ const page = () => {
                 <div className="space-y-6">
                   {[
                     { country: "Kenya", city: "Nairobi", flag: "🇰🇪", note: "East Africa Hub" },
-                    { country: "Rwanda", city: "Kigali", flag: "🇷🇼", note: "Partner Office" },
+                    
                   ].map((office) => (
                     <div key={office.country} className="flex items-start gap-4">
                       <span className="text-2xl leading-none mt-0.5">{office.flag}</span>
