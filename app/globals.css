@@ -7,6 +7,7 @@
 
 @theme inline {
   --font-playfair: var(--font-playfair);
+  --font-georgia: var(--font-georgia);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -50,6 +51,7 @@
 }
 
 :root {
+  --font-georgia: Georgia, "Times New Roman", Times, serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -57,7 +59,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.39 0.06 188);
+  --primary: oklch(0.63 0.17 149);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -96,13 +98,13 @@
 }
 
 h1 {
-  @apply font-playfair font-bold tracking-tight;
+  @apply font-georgia font-bold tracking-tight;
 }
 
 h2 {
-  @apply font-playfair font-semibold tracking-tight;
+  @apply font-georgia font-semibold tracking-tight;
 }
 
 h3 {
-  @apply font-playfair font-semibold;
+  @apply font-georgia font-semibold;
 }

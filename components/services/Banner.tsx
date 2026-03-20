@@ -25,7 +25,7 @@ const ServiceBanner = () => {
         <ScrollReveal delay={0.1}>
           <h1 className="text-4xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold text-white leading-tight mb-6">
             Structured support for {" "}
-            <span className="text-teal-600">African</span> farmers
+            <span className="text-primary">African</span> farmers
           </h1>
         </ScrollReveal>
 
@@ -40,8 +40,8 @@ const ServiceBanner = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               className="rounded-md px-8 py-6 text-base text-white 
-              bg-linear-to-r from-teal-900 via-teal-700 to-emerald-600
-              hover:from-teal-800 hover:via-teal-600 hover:to-emerald-500
+              bg-linear-to-r from-primary-900 via-primary-700 to-emerald-600
+              hover:from-primary-800 hover:via-primary-600 hover:to-emerald-500
               transition-all duration-300 shadow-lg hover:shadow-xl"
               asChild
             >

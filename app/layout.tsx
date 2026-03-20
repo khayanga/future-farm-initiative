@@ -18,11 +18,6 @@ const geistMono = Geist_Mono({
 });
 
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-playfair",
-});
 
 export const metadata: Metadata = {
   title: "Future Farms Initiative | Modernizing East African Agriculture",
@@ -56,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased  `}
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased  `}
       >
         
         <Navbar />

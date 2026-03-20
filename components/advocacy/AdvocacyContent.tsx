@@ -18,7 +18,7 @@ const positions = [
     summary:
       "We are building farms that are technology-enabled and data-driven.",
     detail:
-      "Modern farms must operate on information, not guesswork. We advocate for the integration of digital farm management systems, IoT sensors, satellite data, and analytics into everyday farm operations — making every decision faster, more accurate, and more profitable.",
+      "Modern farms must operate on information, not guesswork. We advocate for the integration of digital farm management systems, IoT sensors, satellite data, and analytics into everyday farm operations making every decision faster, more accurate, and more profitable.",
     tag: "Digital Transformation",
   },
   {
@@ -100,7 +100,8 @@ const AdvocacyContent = () => {
         <div className="container flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <span className="text-md font-semibold text-primary uppercase tracking-[0.2em] block mb-3">
-              The Standardization Strategy
+              Future Farms Framework
+
             </span>
             <h2
               className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground

@@ -8,9 +8,9 @@ import Image from "next/image";
 
 const navLinks = [
   { name: "About Us", href: "/" },
-  { name: "Services", href: "/service" },
   { name: "Our Work", href: "/work" },
   { name: "Our Advocacy", href: "/advocacy" },
+  { name: "Services", href: "/service" },
   {name:"Our Programs", href:"/programs"},
   { name: "News & Updates", href: "/news" },
   { name: "Contact Us", href: "/contact" }, 
@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-md supports-backdrop-filter:bg-background/60">
       <div className="container mx-auto px-4 flex items-center justify-between h-20">
         <Link href="/" >
-          <Image src="/logo.png" alt="Future Farms Logo" width={150} height={150} className="inline-block mr-2" />
+          <Image src="/initiative.png" alt="Future Farms Logo" width={120} height={120} className="inline-block mr-2" />
            
         </Link>
 
@@ -45,13 +45,13 @@ const Navbar = () => {
           
         </div>
 
-        {/* Mobile toggle */}
+        
         <button onClick={() => setOpen(!open)} className="md:hidden text-primary">
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      
       {open && (
         <div className="md:hidden bg-background/95 border-b border-border px-4 pb-6 animate-in fade-in slide-in-from-top-5">
           <div className="flex flex-col gap-4 pt-4">

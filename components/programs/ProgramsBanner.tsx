@@ -24,8 +24,8 @@ const ProgramsBanner = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 py-24 text-center">
         <ScrollReveal delay={0.1}>
           <h1 className="text-4xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold text-white leading-tight mb-6">
-            Knowledge , Tools {" "}
-            <span className="text-teal-600">Systems</span> that transform
+            Equiping farmers with everything {" "}
+            <span className="text-primary">Required</span> for the great change
           </h1>
         </ScrollReveal>
 
@@ -41,8 +41,8 @@ const ProgramsBanner = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               className="rounded-md px-8 py-6 text-base text-white 
-              bg-linear-to-r from-teal-900 via-teal-700 to-emerald-600
-              hover:from-teal-800 hover:via-teal-600 hover:to-emerald-500
+              bg-linear-to-r from-primary via-primary to-emerald-600
+              hover:from-primary hover:via-primary hover:to-emerald-500
               transition-all duration-300 shadow-lg hover:shadow-xl"
               asChild
             >

@@ -1,5 +1,7 @@
+import Link from "next/link";
 import ScrollReveal from "../ScrollReveal";
-import { Building2, TrendingUp, Cpu } from "lucide-react";
+import { Building2, TrendingUp, Cpu, ArrowRight } from "lucide-react";
+import { Button } from "../ui/button";
 
 type Service = {
   icon: React.ReactNode;
@@ -18,7 +20,7 @@ const services: Service[] = [
     title: "Institutional Support",
     intro:
       "We help farmers formalize and professionalize their enterprises.",
-    body: "This includes strengthening governance structures, improving record-keeping and documentation, aligning with regulatory and food safety standards, and establishing clear operational systems. Our goal is to position farms as structured, credible, and sustainable businesses capable of long-term growth and market participation.",
+    body: "We support agribusinesses in building strong, market-ready brands and structured business systems. Our work focuses on developing clear market strategies, brand positioning, and brand identity frameworks."
   },
   {
     number: "02",
@@ -27,7 +29,8 @@ const services: Service[] = [
     title: "Investor Readiness Support",
     intro:
       "We prepare farms to attract and responsibly utilize capital.",
-    body: "This includes financial structuring, cost tracking, profitability analysis, growth planning, and development of clear investment proposals. We guide farmers in understanding financing options — from informal capital to institutional funding — and ensure they are equipped to engage confidently with financiers, partners, and investors.",
+    body: "We support agribusinesses in becoming investment-ready and financially structured. This includes setting up clear financial systems, tracking costs, analyzing profitability, and planning for growth, as well as developing strong investment proposals. We also guide businesses in understanding different financing options and prepare them to confidently engage with investors, partners, and funders."
+  ,
   },
   {
     number: "03",
@@ -36,7 +39,9 @@ const services: Service[] = [
     title: "Technology Readiness Support",
     intro:
       "We enable farmers to adopt and integrate modern agricultural technologies effectively.",
-    body: "This includes assessing digital capacity, introducing centralized farm management systems, strengthening data use, and preparing farms for tech-enabled monitoring and compliance. We ensure that technology adoption is practical, sustainable, and aligned with productivity, efficiency, and market access goals.",
+    body: "We support agribusinesses in adopting practical, tech-enabled systems. This includes assessing digital capacity and introducing tools and knowledge that strengthen data use, and preparing for technology-driven monitoring and compliance. The goal is to ensure technology adoption improves productivity, efficiency, and market access."
+
+
   },
 ];
 
@@ -46,7 +51,7 @@ const ServicesContent = () => {
       <div className="container">
         <ScrollReveal>
           {/* Section intro */}
-          <div className="max-w-2xl mb-16">
+          <div className="max-w-7xl mb-16">
             <span className="text-sm font-semibold text-primary uppercase tracking-wider block mb-3">
               Farmer Services
             </span>
@@ -55,11 +60,22 @@ const ServicesContent = () => {
               <span className="font-serif linear-text italic">Pillars</span>{" "}
               of Transformation
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed">
+            <div className="flex flex-row  justify-between  ">
+              <p className="text-muted-foreground text-lg leading-relaxed max-w-md">
               We support farmers transitioning from traditional operations to
               structured, scalable, and future-ready farming systems through
               three core pillars.
             </p>
+            <Button
+            variant="outline"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground py-4 ">
+              <Link href="https://calendar.app.google/HqAjtdcVn7FPAyg68" target="_blank" className="inline-flex justify-items-center">
+                Book Consultation <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </Button>
+
+            </div>
+            
           </div>
 
           {/* Decorative rule */}

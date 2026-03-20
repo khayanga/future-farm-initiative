@@ -23,13 +23,11 @@ import {
 import Link from "next/link";
 
 const items = [
-  { title: "About Us", url: "/", icon: LayoutDashboard },
-  { title: "Services", url: "/service", icon: Sprout },
-  { title: "Our Work", url: "/work", icon: BarChart3 },
-  { title: "Our Advocacy", url: "/advocacy", icon: Spotlight },
-  {title:"Our Programs", url:"/programs", icon: File},
+  { title: "Act", url: "/", icon: LayoutDashboard },
+  { title: "Partner", url: "/service", icon: Sprout },
+  { title: "Apply", url: "/work", icon: BarChart3 },
   { title: "News & Updates", url: "/news", icon: HelpCircle },
-  { title: "Contact Us", url: "/contact", icon: Phone },
+  
 ];
 
 export function AppSidebar() {
