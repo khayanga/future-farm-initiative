@@ -58,7 +58,7 @@ export default function RootLayout({
 
        <SidebarProvider>
           
-          <div className="flex flex-1 w-full overflow-hidden">
+          <div className="flex max-w-full overflow-hidden ">
             
            
             <AppSidebar />
@@ -67,7 +67,7 @@ export default function RootLayout({
             <div className="flex flex-1 flex-col overflow-y-auto bg-slate-50">
               
               
-              <main className="flex-1 p-1 md:p-2">
+              <main className="flex-1 p-1 md:p-2 ">
                 <div className="max-w-7xl mx-auto">
                   {children}
                 </div>

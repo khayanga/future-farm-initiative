@@ -68,7 +68,7 @@ const ServicesContent = () => {
             </p>
             <Button
             variant="outline"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground py-4 ">
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground py-6 px-8 rounded-md transition-all duration-300">
               <Link href="https://calendar.app.google/HqAjtdcVn7FPAyg68" target="_blank" className="inline-flex justify-items-center">
                 Book Consultation <ArrowRight className="ml-2 w-4 h-4" />
               </Link>

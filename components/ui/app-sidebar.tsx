@@ -18,15 +18,17 @@ import {
   HelpCircle,
   File,
   Phone,
+  Zap,
+  Handshake,
+  ClipboardList,
   
 } from "lucide-react";
 import Link from "next/link";
 
 const items = [
-  { title: "Act", url: "/", icon: LayoutDashboard },
-  { title: "Partner", url: "/service", icon: Sprout },
-  { title: "Apply", url: "/work", icon: BarChart3 },
-  { title: "News & Updates", url: "/news", icon: HelpCircle },
+  { title: "Act", url: "/work/#act", icon: Zap },
+  { title: "Partner", url: "/advocacy/#partners", icon: Handshake },
+  { title: "Apply", url: "/programs/#enroll", icon: ClipboardList },
   
 ];
 
@@ -45,7 +47,7 @@ export function AppSidebar() {
                   <SidebarMenuButton asChild>
                     <Link
                       href={item.url}
-                      className="flex items-center gap-3 px-4 py-2 mb-4 rounded-lg transition-all duration-300 
+                      className="flex items-center gap-3 px-4 py-2 mb-2 rounded-lg transition-all duration-300 
                       hover:bg-white/10 hover:backdrop-blur-md hover:border hover:border-white/20 hover:text-white
                       hover:shadow-lg hover:shadow-black/5"
                               >

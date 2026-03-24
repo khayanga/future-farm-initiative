@@ -10,7 +10,7 @@ const AdvocacyBanner = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/farmer-tech.jpg"
+          src="/farm1.jpg"
           alt="Aerial view of African farmland with modern agriculture technology"
           fill
           priority
@@ -24,7 +24,7 @@ const AdvocacyBanner = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 py-24 text-center">
         <ScrollReveal delay={0.1}>
           <h1 className="text-4xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold text-white leading-tight mb-6">
-            Building Afica's {" "}
+            Building Africa's {" "}
             <span className="text-primary">Future</span> farms
           </h1>
         </ScrollReveal>
@@ -46,8 +46,8 @@ const AdvocacyBanner = () => {
               transition-all duration-300 shadow-lg hover:shadow-xl"
               asChild
             >
-              <Link href="/services">
-                Explore Our Work
+              <Link href="/programs">
+                Explore Our Programs
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>

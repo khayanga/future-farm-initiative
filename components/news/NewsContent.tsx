@@ -53,7 +53,7 @@ const NewsContent = () => {
                         Women Farmers{" "}
                         <span className="linear-text italic">2026</span>
                       </h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
+                      <p className="text-muted-foreground text-md leading-relaxed">
                         We're amplifying the voices of women farmers across East
                         Africa. Share your story of resilience, innovation, or
                         leadership in farming, agro-processing, pastoralism, or
@@ -151,7 +151,7 @@ const NewsContent = () => {
                         Farming as a Business{" "}
                         <span className="linear-text italic">2026</span>
                       </h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
+                      <p className="text-muted-foreground text-md leading-relaxed">
                         In celebration of IYWF 2026, the Future Farms Initiative
                         invites 100 women farmers to join its flagship Farming as
                         a Business program.
@@ -204,7 +204,7 @@ const NewsContent = () => {
                       <p className="text-xs font-bold text-primary uppercase tracking-widest mb-3 flex items-center gap-2">
                         <Users className="w-4 h-4" /> Who Should Apply
                       </p>
-                      <p className="text-sm text-foreground/70 leading-relaxed">
+                      <p className="text-md text-foreground/70 leading-relaxed">
                         Smallholder women farmers, agripreneurs, and women in
                         agro-processing or agritech who are ready to transform
                         their farm into a future-ready, profitable, and

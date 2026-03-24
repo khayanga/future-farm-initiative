@@ -10,7 +10,7 @@ const NewsBanner = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/farmer-tech.jpg"
+          src="/farm7.jpg"
           alt="Aerial view of African farmland with modern agriculture technology"
           fill
           priority
@@ -45,7 +45,7 @@ const NewsBanner = () => {
               transition-all duration-300 shadow-lg hover:shadow-xl"
               asChild
             >
-              <Link href="/services">
+              <Link href="/service">
                 Explore Our Work
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>

@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 
 const ImplementingPartners = () => {
   return (
-    <section className="relative overflow-hidden bg-background px-8 py-24 mb-20 md:mb-32">
+    <section id="partners" className="relative overflow-hidden bg-background px-8 py-24 mb-20 md:mb-32">
       {/* Dot grid */}
       <div
         className="absolute inset-0 opacity-[0.04] text-foreground pointer-events-none"

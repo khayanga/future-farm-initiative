@@ -215,7 +215,7 @@ const ProgramsContent = () => {
                 Enroll
               </span>
 
-              <div className="relative z-10 max-w-lg">
+              <div id="enroll" className="relative z-10 max-w-lg">
                 <span className="text-xs font-semibold text-primary uppercase tracking-widest block mb-3">
                   Ready to Begin?
                 </span>
@@ -225,7 +225,7 @@ const ProgramsContent = () => {
                     starts with a single program.
                   </span>
                 </h3>
-                <p className="mt-4 text-white/50 text-sm leading-relaxed">
+                <p className="mt-4 text-white/50  leading-relaxed text-md">
                   Reach out to learn which program is the right fit for your
                   farm's current stage and take the first structured step
                   toward building a future-ready enterprise.

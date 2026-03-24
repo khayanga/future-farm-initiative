@@ -116,7 +116,7 @@ const WorkContent = () => {
             </div>
 
             {/* ── Bottom CTA strip ── */}
-            <div className="mt-20 relative overflow-hidden rounded-md bg-muted/40 border border-border px-10 py-12 flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div  id ="act" className="mt-20 relative overflow-hidden rounded-md bg-muted/40 border border-border px-10 py-12 flex flex-col md:flex-row md:items-center justify-between gap-8">
               {/* Decorative large text */}
               <span className="absolute right-6 top-1/2 -translate-y-1/2 text-[8rem] font-serif font-bold text-foreground/3 leading-none select-none pointer-events-none">
                 ACT
@@ -134,20 +134,20 @@ const WorkContent = () => {
                 </h3>
                 <p className="mt-4 text-md text-muted-foreground text-base leading-relaxed">
                   The Future Farms Initiative was built to address these
-                  failures at the root through standardization, structured
+                  failures at the root through structured
                   support, and a long-term commitment to farmer transformation.
                 </p>
               </div>
 
               <div className="relative z-10 flex flex-col sm:flex-row gap-4 shrink-0">
                 <a
-                  href="/services"
+                  href="/service"
                   className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
                 >
                   Our Services
                 </a>
                 <a
-                  href="/about"
+                  href="/advocacy"
                   className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-primary text-primary font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-colors"
                 >
                   Learn More

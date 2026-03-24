@@ -1,10 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import { Mail, MapPin, Phone, ArrowRight, CheckCircle2, Send } from "lucide-react";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  ArrowRight,
+  CheckCircle2,
+  Send,
+} from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import { a } from "framer-motion/client";
 
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbwqZBBJ3lkaip0dlPKRPAK-a4PLWxYaMVGZWIsOdgEV7YcjLQCwbtOgJoQPe6qHLBqM/exec";
 const reasons = [
   "Farmer Program Inquiry",
   "Partnership & Collaboration",
@@ -18,8 +28,8 @@ const contactDetails = [
   {
     icon: <Mail className="w-5 h-5" />,
     label: "Email Us",
-    value: "futurefarms@gmail.com",
-    href: "mailto:futurefarms@gmail.com",
+    value: "futurefarms@arbarnegroup.com",
+    href: "mailto:futurefarms@arbarnegroup.com",
   },
   {
     icon: <Phone className="w-5 h-5" />,
@@ -30,7 +40,7 @@ const contactDetails = [
   {
     icon: <MapPin className="w-5 h-5" />,
     label: "Find Us",
-    value: "Nairobi, Kenya" ,
+    value: "Nairobi, Kenya",
     href: "#",
   },
 ];
@@ -38,28 +48,99 @@ const contactDetails = [
 const page = () => {
   const [submitted, setSubmitted] = useState(false);
   const [selectedReason, setSelectedReason] = useState("");
+  const [loading, setLoading] = useState(false);
   const [focused, setFocused] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [startTime, setStartTime] = useState(0);
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    organization: "",
+    message: "",
+    website: "",
+  });
+
+  useEffect(() => {
+    setStartTime(Date.now());
+  }, []);
+
+  const handleChange = (field: string, value: string) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    // 🛡️ HONEYPOT CHECK
+    if (formData.website) {
+      console.warn("Spam detected (honeypot)");
+      return;
+    }
+
+    const timeTaken = Date.now() - startTime;
+    if (timeTaken < 3000) {
+      console.warn("Spam detected (too fast)");
+      return;
+    }
+
+    if (formData.message.length < 10) {
+      alert("Message is too short.");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const res = await fetch(SCRIPT_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+        body: JSON.stringify({
+          ...formData,
+          reason: selectedReason || "General Inquiry",
+        }),
+      });
+      if (!res.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setSubmitted(true);
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        organization: "",
+        message: "",
+        website: "",
+      });
+
+      setSelectedReason("");
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong. Try again.");
+    }
+
+    setLoading(false);
   };
 
   return (
     <section className="bg-background rounded-md  px-8 py-12">
       <div className="container">
-
         <div className="mb-6 md:mb-12 max-w-3xl">
-          <h1 className="text-primary text-2xl  ">Contact Us</h1>
+          <h1 className="text-primary text-3xl  ">Contact Us</h1>
           <p className="text-muted-foreground text-md leading-relaxed  md:text-left">
-            Have questions or want to learn more about the Future Farms Initiative? Fill out the form below and we'll get back to you as soon as possible.
+            Have questions or want to learn more about the Future Farms
+            Initiative? Fill out the form below and we'll get back to you as
+            soon as possible.
           </p>
         </div>
 
-        
         <ScrollReveal>
           <div className="flex flex-col gap-8 md:flex-row lg:flex-row md:gap-16">
-
             {/* ── LEFT: Form ── */}
             <div className="space ">
               {submitted ? (
@@ -85,85 +166,124 @@ const page = () => {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-7">
+                <form onSubmit={handleSubmit} className="space-y-8">
+                  {/* Honeypot */}
+                  <input
+                    type="text"
+                    name="company"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={formData.website}
+                    onChange={(e) => handleChange("website", e.target.value)}
+                    className="hidden"
+                  />
+
+                  {/* Section */}
                   <div>
-                    <p className="text-xs font-bold text-primary uppercase tracking-widest mb-5">
+                    <p className="text-xs font-bold text-primary uppercase tracking-widest mb-6">
                       Your Details
                     </p>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       {/* First Name */}
-                      <div className="relative">
-                        <label className={`absolute left-4 transition-all duration-200 pointer-events-none text-muted-foreground ${focused === "fname" ? "top-2 text-[10px] text-primary font-semibold uppercase tracking-widest" : "top-1/2 -translate-y-1/2 text-sm"}`}>
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-foreground">
                           First Name
                         </label>
                         <input
                           type="text"
                           required
-                          onFocus={() => setFocused("fname")}
-                          onBlur={(e) => !e.target.value && setFocused(null)}
-                          className="w-full pt-6 pb-3 px-4 bg-muted/40 border border-border rounded-md text-sm text-foreground focus:outline-none focus:border-primary transition-colors duration-200"
+                          value={formData.firstName}
+                          onChange={(e) =>
+                            handleChange("firstName", e.target.value)
+                          }
+                          className="w-full px-4 py-3 rounded-md border border-border bg-muted/40 text-sm text-foreground 
+          placeholder:text-muted-foreground/50 
+          focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary 
+          transition-all duration-200"
+                          placeholder="John"
                         />
                       </div>
 
                       {/* Last Name */}
-                      <div className="relative">
-                        <label className={`absolute left-4 transition-all duration-200 pointer-events-none text-muted-foreground ${focused === "lname" ? "top-2 text-[10px] text-primary font-semibold uppercase tracking-widest" : "top-1/2 -translate-y-1/2 text-sm"}`}>
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-foreground">
                           Last Name
                         </label>
                         <input
                           type="text"
                           required
-                          onFocus={() => setFocused("lname")}
-                          onBlur={(e) => !e.target.value && setFocused(null)}
-                          className="w-full pt-6 pb-3 px-4 bg-muted/40 border border-border rounded-md text-sm text-foreground focus:outline-none focus:border-primary transition-colors duration-200"
+                          value={formData.lastName}
+                          onChange={(e) =>
+                            handleChange("lastName", e.target.value)
+                          }
+                          className="w-full px-4 py-3 rounded-md border border-border bg-muted/40 text-sm text-foreground 
+          focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary 
+          transition-all duration-200"
+                          placeholder="Doe"
                         />
                       </div>
 
                       {/* Email */}
-                      <div className="relative">
-                        <label className={`absolute left-4 transition-all duration-200 pointer-events-none text-muted-foreground ${focused === "email" ? "top-2 text-[10px] text-primary font-semibold uppercase tracking-widest" : "top-1/2 -translate-y-1/2 text-sm"}`}>
+                      <div className="space-y-2 sm:col-span-2">
+                        <label className="text-sm font-medium text-foreground">
                           Email Address
                         </label>
                         <input
                           type="email"
                           required
-                          onFocus={() => setFocused("email")}
-                          onBlur={(e) => !e.target.value && setFocused(null)}
-                          className="w-full pt-6 pb-3 px-4 bg-muted/40 border border-border rounded-md text-sm text-foreground focus:outline-none focus:border-primary transition-colors duration-200"
+                          value={formData.email}
+                          onChange={(e) =>
+                            handleChange("email", e.target.value)
+                          }
+                          className="w-full px-4 py-3 rounded-md border border-border bg-muted/40 text-sm text-foreground 
+          focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary 
+          transition-all duration-200"
+                          placeholder="you@example.com"
                         />
                       </div>
 
                       {/* Organisation */}
-                      <div className="relative">
-                        <label className={`absolute left-4 transition-all duration-200 pointer-events-none text-muted-foreground ${focused === "org" ? "top-2 text-[10px] text-primary font-semibold uppercase tracking-widest" : "top-1/2 -translate-y-1/2 text-sm"}`}>
-                          Organisation (optional)
+                      <div className="space-y-2 sm:col-span-2">
+                        <label className="text-sm font-medium text-foreground">
+                          Organisation{" "}
+                          <span className="text-muted-foreground">
+                            (optional)
+                          </span>
                         </label>
                         <input
                           type="text"
-                          onFocus={() => setFocused("org")}
-                          onBlur={() => setFocused(null)}
-                          className="w-full pt-6 pb-3 px-4 bg-muted/40 border border-border rounded-md text-sm text-foreground focus:outline-none focus:border-primary transition-colors duration-200"
+                          value={formData.organization}
+                          onChange={(e) =>
+                            handleChange("organization", e.target.value)
+                          }
+                          className="w-full px-4 py-3 rounded-md border border-border bg-muted/40 text-sm text-foreground 
+          focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary 
+          transition-all duration-200"
+                          placeholder="Your company / farm"
                         />
                       </div>
                     </div>
                   </div>
 
                   {/* Reason */}
-                  <div >
+                  <div>
                     <p className="text-xs font-bold text-primary uppercase tracking-widest mb-4">
                       Reason for Contact
                     </p>
+
                     <div className="flex flex-wrap gap-2">
                       {reasons.map((reason) => (
                         <button
                           type="button"
                           key={reason}
                           onClick={() => setSelectedReason(reason)}
-                          className={`px-4 py-2 rounded-full text-xs font-semibold border transition-all duration-200 ${
-                            selectedReason === reason
-                              ? "bg-primary text-primary-foreground border-primary"
-                              : "border-border text-muted-foreground hover:border-primary/40 hover:text-foreground bg-muted/30"
-                          }`}
+                          className={`px-4 py-2 rounded-full text-xs font-semibold border transition-all duration-200
+            ${
+              selectedReason === reason
+                ? "bg-primary text-primary-foreground border-primary shadow-sm"
+                : "border-border text-muted-foreground hover:border-primary/40 hover:text-foreground bg-muted/30"
+            }`}
                         >
                           {reason}
                         </button>
@@ -172,29 +292,33 @@ const page = () => {
                   </div>
 
                   {/* Message */}
-                  <div>
-                    <p className="text-xs font-bold text-primary uppercase tracking-widest mb-4">
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-foreground">
                       Your Message
-                    </p>
-                    <div className="relative">
-                      <textarea
-                        required
-                        rows={5}
-                        placeholder="Tell us about your farm, your project, or how we can help..."
-                        onFocus={() => setFocused("msg")}
-                        onBlur={() => setFocused(null)}
-                        className={`w-full p-4 bg-muted/40 border rounded-md text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none transition-colors duration-200 resize-none ${focused === "msg" ? "border-primary" : "border-border"}`}
-                      />
-                    </div>
+                    </label>
+
+                    <textarea
+                      required
+                      rows={5}
+                      placeholder="Tell us about your farm, your project, or how we can help..."
+                      value={formData.message}
+                      onChange={(e) => handleChange("message", e.target.value)}
+                      className="w-full px-4 py-3 rounded-md border border-border bg-muted/40 text-sm text-foreground 
+      placeholder:text-muted-foreground/50 
+      focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary 
+      transition-all duration-200 resize-none"
+                    />
                   </div>
 
                   {/* Submit */}
                   <button
                     type="submit"
-                    className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-semibold text-sm rounded-md hover:opacity-90 transition-all duration-200"
+                    disabled={loading}
+                    className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground 
+    font-semibold text-sm rounded-md hover:opacity-90 transition-all duration-200 disabled:opacity-50"
                   >
                     <Send className="w-4 h-4" />
-                    Send Message
+                    {loading ? "Sending..." : "Send Message"}
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                   </button>
                 </form>
@@ -203,7 +327,6 @@ const page = () => {
 
             {/* ── RIGHT: Sidebar ── */}
             <div className=" flex flex-col gap-8">
-
               {/* Contact details card */}
               <div className="rounded-md bg-foreground border border-white/5 p-8 relative overflow-hidden">
                 <div
@@ -249,14 +372,27 @@ const page = () => {
                 </p>
                 <div className="space-y-6">
                   {[
-                    { country: "Kenya", city: "Nairobi", flag: "🇰🇪", note: "East Africa Hub" },
-                    
+                    {
+                      country: "Kenya",
+                      city: "Nairobi",
+                      flag: "🇰🇪",
+                      note: "East Africa Hub",
+                    },
                   ].map((office) => (
-                    <div key={office.country} className="flex items-start gap-4">
-                      <span className="text-2xl leading-none mt-0.5">{office.flag}</span>
+                    <div
+                      key={office.country}
+                      className="flex items-start gap-4"
+                    >
+                      <span className="text-2xl leading-none mt-0.5">
+                        {office.flag}
+                      </span>
                       <div>
-                        <p className="font-bold text-foreground font-serif">{office.city}, {office.country}</p>
-                        <p className="text-xs text-muted-foreground mt-0.5 uppercase tracking-widest">{office.note}</p>
+                        <p className="font-bold text-foreground font-serif">
+                          {office.city}, {office.country}
+                        </p>
+                        <p className="text-xs text-muted-foreground mt-0.5 uppercase tracking-widest">
+                          {office.note}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -267,8 +403,11 @@ const page = () => {
               <div className="flex items-start gap-3 px-5 py-4 rounded-md bg-primary/5 border border-primary/15">
                 <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mt-1.5 shrink-0" />
                 <p className="text-sm text-foreground/70 leading-relaxed">
-                  <span className="font-semibold text-foreground">We typically respond within 2–3 business days.</span>{" "}
-                  For urgent program inquiries, please mention it in your message.
+                  <span className="font-semibold text-foreground">
+                    We typically respond within 2–3 business days.
+                  </span>{" "}
+                  For urgent program inquiries, please mention it in your
+                  message.
                 </p>
               </div>
             </div>

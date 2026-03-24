@@ -25,7 +25,7 @@ const Content = () => {
                   2.5B
                 </p>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Africa must produce at least 30% more food to feed people by 2050
+                 Africa must produce at least 30% more food by 2050 to feed its population.
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Content = () => {
                 className="rounded-md border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                 asChild
               >
-                <Link href="/about">
+                <Link href="/work">
                   Learn More <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>

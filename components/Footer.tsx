@@ -1,10 +1,11 @@
 import { Leaf, Mail, MapPin, Phone, ArrowUpRight, Twitter, Linkedin, Instagram } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const currentYear = new Date().getFullYear();
 
 const navLinks = [
-  { label: "About", href: "/about" },
+  { label: "About", href: "/" },
   { label: "Our Work", href: "/work" },
   { label: "Services", href: "/service" },
   { label: "Programs", href: "/programs" },
@@ -16,7 +17,7 @@ const navLinks = [
 const partners = ["WFF Kenya", "WFF Rwanda", "JLA"];
 
 const socials = [
-  { icon: <Twitter className="w-4 h-4" />, href: "#", label: "Twitter" },
+  
   { icon: <Linkedin className="w-4 h-4" />, href: "https://www.linkedin.com/company/arbarne-agriculture-group/", label: "LinkedIn" },
   { icon: <Instagram className="w-4 h-4" />, href: "https://www.instagram.com/futurefarms_africa?igsh=cDBheXd6MHY0emEz", label: "Instagram" },
 ];
@@ -44,9 +45,9 @@ const Footer = () => (
     <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-primary via-primary/40 to-transparent" />
 
     {/* Ghost word */}
-    {/* <span className="absolute -bottom-4 right-0 text-[18vw] font-serif font-bold text-white/2 leading-none select-none pointer-events-none pr-4 uppercase">
+    <span className="absolute -bottom-4 right-0 text-[15vw] text-center font-serif font-bold text-white/2 leading-none select-none pointer-events-none pr-4 uppercase">
       Future Farms
-    </span> */}
+    </span>
 
     <div className="relative z-10 container px-8">
 
@@ -55,18 +56,24 @@ const Footer = () => (
 
         {/* Brand block */}
         <div className="lg:col-span-5">
-          <div className="flex items-center gap-3 mb-5">
-            <div className="w-9 h-9 rounded-full bg-primary/20 flex items-center justify-center">
-              <Leaf className="w-4 h-4 text-primary" />
+          <div className="flex items-center gap-3 mb-2">
+            <div className=" flex items-center justify-center">
+              <Image src="/footer.png" alt="Logo" width={180} height={180} className="object-cover" />
             </div>
-            <span className="font-serif text-xl font-bold text-white tracking-tight">
-              Future Farms Initiative
-            </span>
+           
           </div>
 
           <p className="text-white/50 text-sm leading-relaxed max-w-sm mb-8">
-            Redesigning Africa's agricultural systems for a future-ready tomorrow —
-            through standardization, technology, and structured transformation.An initiative of the<span>Arbarne agriculture group</span>
+            Redesigning Africa's agricultural systems for a future-ready tomorrow through technology, and structured transformation.
+            An initiative of the{" "}
+            <a
+              href="https://arbarnegroup.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-bold hover:text-primary"
+            >
+              Arbarne agriculture group
+            </a>
           </p>
 
           {/* Stat strip */}
@@ -133,14 +140,14 @@ const Footer = () => (
             </h4>
             <ul className="space-y-4">
               {[
-                { icon: <Mail className="w-4 h-4" />, text: "info@futurefarms.org", href: "mailto:info@futurefarms.org" },
-                { icon: <Phone className="w-4 h-4" />, text: "+254 700 000 000", href: "tel:+254700000000" },
+                { icon: <Mail className="w-4 h-4" />, text: "futurefarms@arbarnegroup.com", href: "mailto:futurefarms@arbarnegroup.com" },
+                { icon: <Phone className="w-4 h-4" />, text: "+254757721222", href: "tel:+254757721222" },
                 { icon: <MapPin className="w-4 h-4" />, text: "Nairobi, Kenya ·" },
               ].map((item) => (
                 <li key={item.text}>
                   <a
                     href={item.href}
-                    className="group flex items-start gap-3 text-sm text-white/50 hover:text-white transition-colors duration-200"
+                    className=" group flex items-center  gap-3 text-sm text-white/50 hover:text-white transition-colors duration-200"
                   >
                     <span className="mt-0.5 w-7 h-7 rounded-full bg-white/5 group-hover:bg-primary/20 flex items-center justify-center shrink-0 text-primary transition-colors duration-200">
                       {item.icon}

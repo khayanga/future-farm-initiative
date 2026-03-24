@@ -45,7 +45,7 @@ const ServiceBanner = () => {
               transition-all duration-300 shadow-lg hover:shadow-xl"
               asChild
             >
-              <Link href="/services">
+              <Link href="/work">
                 Explore Our Work
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
@@ -56,7 +56,7 @@ const ServiceBanner = () => {
               className="rounded-md px-8 py-6 text-base border-white/60 text-white bg-white/20"
               asChild
             >
-              <Link href="/about">Our Story</Link>
+              <Link href="/contact">Contact Us</Link>
             </Button>
           </div>
         </ScrollReveal>

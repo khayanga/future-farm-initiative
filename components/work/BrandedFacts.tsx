@@ -215,7 +215,7 @@ const BrandedFacts = () => {
                 What Drives Us
               </span>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+              <h2 className="text-3xl max-w-md sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                 Three Truths About{" "}
                 <span className="font-serif italic text-primary">
                   Africa's Food Future
@@ -223,7 +223,7 @@ const BrandedFacts = () => {
               </h2>
             </div>
 
-            <p className="text-muted-foreground text-sm max-w-xs md:text-right leading-relaxed">
+            <p className="text-muted-foreground text-md max-w-xs md:text-right leading-relaxed">
               Every initiative we run is anchored in these realities. They are
               not projections they are the ground we stand on.
             </p>

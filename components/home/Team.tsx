@@ -18,39 +18,24 @@ const team: TeamMember[] = [
   {
     name: "Alice Ayuma",
     role: "Founder & Executive Director",
-    bio: "Agronomist and systems thinker with 15 years leading agricultural transformation across sub-Saharan Africa.",
+    bio: "Founder driving vision and partnerships, building scalable agribusiness solutions focused on empowering smallholder farmers across emerging markets.",
     image: "/alice.jpg",
-    socials: { linkedin: "", email: "aliceaannette96@gmail.com" },
+    socials: { linkedin: "https://www.linkedin.com/in/alice-ayuma/", email: "aliceaannette96@gmail.com" },
   },
   {
     name: "Virgil Khayanga",
     role: "Head of Technology and Digital Transformation",
-    bio: "Building precision agriculture tools that bridge the gap between traditional farming knowledge and modern data systems.",
+    bio: "Technology leader delivering scalable digital platforms, to optimize agricultural operations and enhance decision-making processes.",
     image: "/virgil.jpg",
     socials: { linkedin: "https://www.linkedin.com/in/virgil-khayanga-113b18262/", email: "devkhayanga@gmail.com" },
   },
-  // {
-  //   name: "Fatima Nkrumah",
-  //   role: "Market Systems Lead",
-  //   bio: "Connecting smallholder farmers to structured markets through supply chain innovation and policy advocacy.",
-  //   image: "/person3.jpg",
-  //   socials: { linkedin: "#", twitter: "#" },
-  // },
-  // {
-  //   name: "Chidi Mensah",
-  //   role: "Energy & Infrastructure",
-  //   bio: "Designing solar-powered agri-solutions that reduce operational costs and increase year-round farm productivity.",
-  //   image: "/person4.jpg",
-  //   socials: { linkedin: "#", email: "chidi@futurefarms.org" },
-  // },
-  // {
-  //   name: "Aisha Tamboli",
-  //   role: "Indigenous Knowledge Curator",
-  //   bio: "Preserving and integrating centuries of African agricultural wisdom into modern farm standardization frameworks.",
-  //   image: "/person1.jpg",
-  //   socials: { linkedin: "#", twitter: "#" },
-  // },
- 
+  {
+    name:"Lydhia Kiswii",
+    role:"Head of Programs",
+    bio:"Programs lead designing impactful initiatives, managing partnerships and implementation frameworks that drive sustainable adoption among farming communities.",
+    image:"/lydia.jpg",
+    socials: { linkedin:"https://www.linkedin.com/in/lydhia-kiswii-msc-613b29131/", email: "lydhiakiswii@gmail.com" }
+  }
 ];
 
 const TeamSection = () => {
@@ -85,7 +70,7 @@ const TeamSection = () => {
                 style={{ animationDelay: `${index * 80}ms` }}
               >
                 {/* Image */}
-                <div className="relative w-full h-82 overflow-hidden">
+                <div className="relative w-full h-78 overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}

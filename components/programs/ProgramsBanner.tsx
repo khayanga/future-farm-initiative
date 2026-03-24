@@ -10,7 +10,7 @@ const ProgramsBanner = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/farmer-tech.jpg"
+          src="/farm2.jpg"
           alt="Aerial view of African farmland with modern agriculture technology"
           fill
           priority
@@ -46,8 +46,8 @@ const ProgramsBanner = () => {
               transition-all duration-300 shadow-lg hover:shadow-xl"
               asChild
             >
-              <Link href="/services">
-                Explore Our Work
+              <Link href="/programs/#enroll">
+                Enroll Now
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
@@ -57,7 +57,7 @@ const ProgramsBanner = () => {
               className="rounded-md px-8 py-6 text-base border-white/60 text-white bg-white/20"
               asChild
             >
-              <Link href="/about">Our Story</Link>
+              <Link href="/contact">Contact Us</Link>
             </Button>
           </div>
         </ScrollReveal>
