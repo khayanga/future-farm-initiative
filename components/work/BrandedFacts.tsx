@@ -1,4 +1,3 @@
-
 import ScrollReveal from "../ScrollReveal";
 import { Shield, Sprout, BarChart3 } from "lucide-react";
 
@@ -79,10 +78,10 @@ const BrandedFacts = () => {
             </div>
 
             <p className="text-muted-foreground text-md max-w-xs md:text-right leading-relaxed">
-              Every initiative we run is anchored in these realities,Food security is urgent,
-              Improved Productivity and  efficiency is the fastest path to feeding more.
-              Farming as a business unlocks finance, resilience, and lasting income.
-  
+              Every initiative we run is anchored in these realities. Food
+              security is urgent. Improved Productivity & efficiency the fastest
+              path to feeding more. Farming as a business unlocks finance,
+              resilience, and lasting incomes.
             </p>
           </div>
 

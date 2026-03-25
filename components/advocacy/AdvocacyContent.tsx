@@ -66,7 +66,7 @@ const positions = [
     title: "Skilled Labour as a Core Production Factor",
     summary: "We elevate skilled labour as a core factor of production.",
     detail:
-      "Africa's youth bulge is an agricultural opportunity, not a challenge. We advocate for structured training, formal labour standards, and investment in farm-based skills development transforming agricultural work from informal subsistence into recognized, valued, and well-compensated careers.",
+      "Africa's youth bulge is an agricultural opportunity. We advocate for structured training, formal labour standards, and investment in farm-based skills development transforming agricultural work from informal subsistence into recognized, valued, and well-compensated careers.",
     tag: "Workforce Development",
   },
   {
@@ -81,11 +81,11 @@ const positions = [
   {
     number: "08",
     icon: <Rocket className="w-5 h-5" />,
-    title: "Farming as a Modern, Competitive Enterprise",
+    title: "Investment-Ready Farms",
     summary:
-      "We are shaping farming as a modern, competitive, and future-ready enterprise.",
+      "We are shaping farming as a modern, competitive, and investment-ready enterprise",
     detail:
-      "The perception of farming must change for the sector to attract the talent, capital, and policy attention it deserves. We are building a new narrative one where farming is seen as a high-value, tech-enabled profession that drives national economies and feeds the world.",
+      "To unlock capital and talent, the perception of farming must change. We are redefining agriculture as a high-value, tech-enabled enterprise that attracts investments and drives economic growth.",
     tag: "Sector Reimagination",
   },
 ];

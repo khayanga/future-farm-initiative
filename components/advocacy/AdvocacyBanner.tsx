@@ -24,16 +24,14 @@ const AdvocacyBanner = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 py-24 text-center">
         <ScrollReveal delay={0.1}>
           <h1 className="text-4xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold text-white leading-tight mb-6">
-            Building Africa's {" "}
-            <span className="text-primary">Future</span> farms
+            People,  {" "}
+            <span className="text-primary">Planet & </span> Profit
           </h1>
         </ScrollReveal>
 
         <ScrollReveal delay={0.2}>
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-             The Future Farms Standardization Strategy a bold, structured
-            blueprint for transforming African agriculture into a modern,
-            competitive, and future-ready enterprise.
+             Building farm systems that create value, protect the planet, and drive long-term profitability.
           </p>
         </ScrollReveal>
 

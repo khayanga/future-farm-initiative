@@ -24,8 +24,8 @@ const ProgramsBanner = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 py-24 text-center">
         <ScrollReveal delay={0.1}>
           <h1 className="text-4xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold text-white leading-tight mb-6">
-            Equiping farmers with everything {" "}
-            <span className="text-primary">Required</span> for the great change
+            Equipping Farmers with the {" "}
+            <span className="text-primary">knowledge & tools</span> required for the Great Transition.
           </h1>
         </ScrollReveal>
 
