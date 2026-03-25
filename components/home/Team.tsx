@@ -70,7 +70,7 @@ const TeamSection = () => {
                 style={{ animationDelay: `${index * 80}ms` }}
               >
                 {/* Image */}
-                <div className="relative w-full h-78 overflow-hidden">
+                <div className="relative w-full h-82 md:h-78 overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}

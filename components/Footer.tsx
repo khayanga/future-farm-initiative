@@ -49,7 +49,7 @@ const Footer = () => (
       Future Farms
     </span>
 
-    <div className="relative z-10 container px-8">
+    <div className="relative z-10 container px-8 ">
 
       {/* ── Top section ── */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16 pb-12 border-b border-white/8">
