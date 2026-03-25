@@ -24,17 +24,17 @@ const WorkBanner = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 py-24 text-center">
         <ScrollReveal delay={0.1}>
           <h1 className="text-4xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold text-white leading-tight mb-6">
-            Facilitating the transition to {" "}
-            <span className="text-primary">future</span> ready farms
+            Redesigning Africa’s  {" "}
+            <span className="text-primary"> Agricultural Systems</span> for climate resilience & Food Security
           </h1>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.2}>
+        {/* <ScrollReveal delay={0.2}>
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
              From governance to technology we equip farms with the systems,
             tools, and confidence to compete, grow, and lead in modern markets.
           </p>
-        </ScrollReveal>
+        </ScrollReveal> */}
 
         <ScrollReveal delay={0.3}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
