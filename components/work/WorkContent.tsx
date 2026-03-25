@@ -33,7 +33,8 @@ const challenges: Challenge[] = [
     stat: "< 5%",
     statLabel: "tech adoption rate",
     title: "Technology Exists But Adoption is Limited",
-    body: "The tools to transform African agriculture already exist precision monitoring, digital farm management, data-driven decision-making. Yet adoption remains critically low due to cost barriers, capacity gaps, and lack of structured support.",
+    body: "The tools to transform African agriculture already exist - precision monitoring, digital farm management, and data-driven decision-making. Yet adoption remains critically low due to cost barriers, capacity gaps, and a lack of structured support.
+",
   },
   {
     number: "04",
