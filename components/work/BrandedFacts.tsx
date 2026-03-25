@@ -80,7 +80,7 @@ const BrandedFacts = () => {
 
             <p className="text-muted-foreground text-md max-w-xs md:text-right leading-relaxed">
               Every initiative we run is anchored in these realities,Food security is urgent,
-              Improved Productivity and  efficiency the fastest path to feeding more.
+              Improved Productivity and  efficiency is the fastest path to feeding more.
               Farming as a business unlocks finance, resilience, and lasting income.
   
             </p>
