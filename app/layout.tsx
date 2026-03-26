@@ -17,8 +17,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   title: "Future Farms Initiative | Modernizing East African Agriculture",
   description:
@@ -53,32 +51,22 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable}  antialiased  `}
       >
-        
         <Navbar />
 
-       <SidebarProvider>
-          
-          <div className="flex max-w-full overflow-hidden ">
-            
-           
-            <AppSidebar />
+        <SidebarProvider>
+          <div className="flex max-w-full overflow-hidden mx-auto">
+            {/* <AppSidebar /> */}
 
-            
-            <div className="flex flex-1 flex-col overflow-y-auto bg-slate-50">
-              
-              
-              <main className="flex-1 p-1 md:p-2 ">
-                <div className="max-w-7xl mx-auto">
-                  {children}
-                </div>
-              </main>
+            <div className="flex flex-1 justify-center ">
+              <div className="w-full max-w-7xl flex flex-col overflow-y-auto mx-auto">
+                <main className="flex-1 p-1 md:p-2">{children}</main>
 
-              
-              <Footer />
-              
+                
+              </div>
             </div>
           </div>
         </SidebarProvider>
+        <Footer />
       </body>
     </html>
   );

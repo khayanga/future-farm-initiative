@@ -72,7 +72,7 @@ const ServicesContent = () => {
               <span className="font-serif linear-text italic">Pillars</span>{" "}
               of Transformation
             </h2>
-            <div className="flex flex-row  justify-between  ">
+            <div className="flex flex-col gap-6 md:flex-row  justify-between  ">
               <p className="text-muted-foreground text-lg leading-relaxed max-w-md">
               We support farmers transitioning from traditional operations to
               structured, scalable, and future-ready farming systems through

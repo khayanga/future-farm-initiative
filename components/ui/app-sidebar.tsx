@@ -35,7 +35,7 @@ const items = [
 export function AppSidebar() {
   return (
     <Sidebar className="hidden md:flex h-full border-r ">
-      <SidebarContent className="mt-20 bg-primary text-background">
+      <SidebarContent className="mt-20 bg-teal-900 text-background">
         <SidebarGroup>
           <SidebarGroupLabel className="text-primary-foreground text-md font-bold px-4 py-4 mb-4">
             Future Farms Initiative

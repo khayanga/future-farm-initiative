@@ -24,8 +24,8 @@ const Banner = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 py-24 text-center">
         <ScrollReveal delay={0.1}>
           <h1 className="text-4xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold text-white leading-tight mb-6">
-            Redesigning Africa's Agricultural Systems for a{" "}
-            <span className="text-primary">Future-Ready</span> Tomorrow
+            Facilitating the Transition to{" "}
+            <span className="text-primary">Future-Ready</span> Farm Systems
           </h1>
         </ScrollReveal>
 

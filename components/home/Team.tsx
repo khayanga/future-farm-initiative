@@ -52,8 +52,8 @@ const TeamSection = () => {
                 <span className="font-serif linear-text italic">Team</span>
               </h2>
               <p className="text-muted-foreground text-base max-w-md lg:text-right">
-                We believe Africa’s farms must be designed for the future, resilient, efficient, and productive. Our role is to enable the creation of farm systems that integrate technology, 
-                sustainability, and local context to enable farmers and agribusinesses to thrive in a changing world.
+               We believe Africa’s farms must be designed for the future, resilient, efficient, and productive. Our role is to enable the creation of farm systems that integrate technology, sustainability, and local context to enable farmers and agribusinesses to thrive in a changing climate.
+
               </p>
             </div>
 

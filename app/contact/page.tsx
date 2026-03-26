@@ -328,7 +328,7 @@ const page = () => {
             {/* ── RIGHT: Sidebar ── */}
             <div className=" flex flex-col gap-8">
               {/* Contact details card */}
-              <div className="rounded-md bg-foreground border border-white/5 p-8 relative overflow-hidden">
+              <div className="rounded-md bg-teal-900 border border-white/5 p-8 relative overflow-hidden">
                 <div
                   className="absolute inset-0 opacity-[0.03] pointer-events-none"
                   style={{

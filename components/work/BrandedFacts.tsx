@@ -8,7 +8,7 @@ const facts = [
     label: "Food Security",
     stat: "2.5B",
     statSub: "people to feed by 2050",
-    headline: "Food security is no longer optional it is urgent.",
+    headline: "Food security is  urgent.",
     body: "With Africa's population projected to reach 2.5 billion by 2050, the continent faces an unprecedented demand for safe, reliable, and locally produced food. The window to act is now.",
     accent: "from-emerald-500/30 to-transparent",
     iconBg:
@@ -20,7 +20,7 @@ const facts = [
     label: "Tech-Led Agriculture",
     stat: "↑ 3×",
     statSub: "productivity potential with tech",
-    headline: "Productivity & efficiency the fastest path to feeding more.",
+    headline: "Farming as a business unlocks finance, resilience, and lasting incomes.",
     body: "Boosting farm productivity through technology is the most direct route to feeding more people while cutting post-harvest losses. Smart farming isn't the future — it's the present requirement.",
     accent: "from-primary/30 to-transparent",
     iconBg:
@@ -34,9 +34,9 @@ const facts = [
     statSub: "of arable land underutilized",
     headline: "When farming becomes a business, everything changes.",
     body: "Treating farming as a structured enterprise unlocks access to finance, builds climate resilience, and secures stable incomes for farmers and their families generation after generation.",
-    accent: "from-amber-500/30 to-transparent",
+    accent: "from-teal-500/30 to-transparent",
     iconBg:
-      "bg-amber-500/10 text-amber-600 group-hover:bg-amber-500 group-hover:text-white",
+      "bg-teal-500/10 text-teal-600 group-hover:bg-teal-500 group-hover:text-white",
   },
 ];
 
@@ -56,15 +56,15 @@ const BrandedFacts = () => {
       <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/60 to-transparent" />
 
       {/* Watermark */}
-      <span className="absolute -right-8 top-1/2 -translate-y-1/2 text-[18vw] font-serif font-bold text-foreground/5 leading-none select-none pointer-events-none uppercase">
+      {/* <span className="absolute -right-8 top-1/2 -translate-y-1/2 text-[18vw] font-serif font-bold text-foreground/5 leading-none select-none pointer-events-none uppercase">
         Facts
-      </span>
+      </span> */}
 
       <div className="container relative z-10">
         <ScrollReveal>
           {/* Section Header */}
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
-            <div>
+          <div className=" flex flex-col md:items-center md:flex-row  md:justify-between items-start gap-6 mb-16">
+            <div >
               <span className="text-xs font-semibold text-primary uppercase tracking-[0.2em] block mb-3">
                 What Drives Us
               </span>
@@ -77,12 +77,15 @@ const BrandedFacts = () => {
               </h2>
             </div>
 
-            <p className="text-muted-foreground text-md max-w-xs md:text-right leading-relaxed">
+            <div >
+              <p className="text-muted-foreground text-md max-w-xs md:text-right leading-relaxed">
               Every initiative we run is anchored in these realities. Food
-              security is urgent. Improved Productivity & efficiency the fastest
-              path to feeding more. Farming as a business unlocks finance,
-              resilience, and lasting incomes.
+              security is urgent. 
             </p>
+
+            </div>
+
+            
           </div>
 
           {/* Divider */}
@@ -132,13 +135,13 @@ const BrandedFacts = () => {
 
                 {/* Text */}
                 <div className="flex flex-col gap-3 border-t border-border pt-6">
-                  <h3 className="text-base font-bold text-foreground leading-snug">
+                  <h3 className="text-base font-bold text-foreground/80 leading-snug">
                     {fact.headline}
                   </h3>
 
-                  <p className="text-md text-muted-foreground leading-relaxed">
+                  {/* <p className="text-md text-muted-foreground leading-relaxed">
                     {fact.body}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             ))}

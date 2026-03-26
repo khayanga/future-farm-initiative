@@ -25,33 +25,33 @@ const programs = [
     statLabel: "Program Focus",
     stat: "Profitability & Scale",
   },
+  // {
+  //   number: "02",
+  //   icon: <PiggyBank className="w-6 h-6" />,
+  //   tag: "Financial Capability",
+  //   title: "Financial Literacy Training",
+  //   hook: "Confidence and clarity in every financial decision.",
+  //   intro:
+  //     "We strengthen farmers' financial confidence and decision-making capacity moving beyond guesswork to structured, data-backed financial management.",
+  //   body: "This training covers budgeting, cost tracking, pricing strategies, savings, debt management, record-keeping, and understanding financing options. Farmers gain the ability to assess risk, plan investments, improve cash flow management, and engage formal and informal financial institutions effectively.",
+  //   outcomes: [
+  //     "Budgeting & cost tracking systems",
+  //     "Pricing strategy & margin management",
+  //     "Savings & debt management frameworks",
+  //     "Investment planning & risk assessment",
+  //     "Financial institution engagement skills",
+  //   ],
+  //   accent: "from-primary/30 via-primary/10 to-transparent",
+  //   iconColor: "bg-primary/10 text-primary",
+  //   iconHover: "group-hover:bg-primary group-hover:text-primary-foreground",
+  //   statLabel: "Program Focus",
+  //   stat: "Financial Resilience",
+  // },
   {
     number: "02",
-    icon: <PiggyBank className="w-6 h-6" />,
-    tag: "Financial Capability",
-    title: "Financial Literacy Training",
-    hook: "Confidence and clarity in every financial decision.",
-    intro:
-      "We strengthen farmers' financial confidence and decision-making capacity moving beyond guesswork to structured, data-backed financial management.",
-    body: "This training covers budgeting, cost tracking, pricing strategies, savings, debt management, record-keeping, and understanding financing options. Farmers gain the ability to assess risk, plan investments, improve cash flow management, and engage formal and informal financial institutions effectively.",
-    outcomes: [
-      "Budgeting & cost tracking systems",
-      "Pricing strategy & margin management",
-      "Savings & debt management frameworks",
-      "Investment planning & risk assessment",
-      "Financial institution engagement skills",
-    ],
-    accent: "from-primary/30 via-primary/10 to-transparent",
-    iconColor: "bg-primary/10 text-primary",
-    iconHover: "group-hover:bg-primary group-hover:text-primary-foreground",
-    statLabel: "Program Focus",
-    stat: "Financial Resilience",
-  },
-  {
-    number: "03",
     icon: <BarChart2 className="w-6 h-6" />,
     tag: "Operational Excellence",
-    title: "Farm Management Training",
+    title: "Farm Management for Climate Resilience",
     hook: "Practical skills to drive efficiency and consistent output.",
     intro:
       "We provide hands-on, practical skills to improve operational efficiency and productivity across every stage of the farm cycle.",
@@ -63,9 +63,9 @@ const programs = [
       "Performance tracking & data use",
       "Consistent market-ready output standards",
     ],
-    accent: "from-amber-500/30 via-amber-500/10 to-transparent",
-    iconColor: "bg-amber-500/10 text-amber-600",
-    iconHover: "group-hover:bg-amber-500 group-hover:text-white",
+    accent: "from-teal-500/30 via-teal-500/10 to-transparent",
+    iconColor: "bg-teal-500/10 text-teal-600",
+    iconHover: "group-hover:bg-teal-500 group-hover:text-white",
     statLabel: "Program Focus",
     stat: "Yield & Efficiency",
   },
@@ -200,7 +200,7 @@ const ProgramsContent = () => {
             </div>
 
             {/* Bottom CTA */}
-            <div className="mt-20 relative overflow-hidden rounded-md bg-foreground px-10 py-14 flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div className="mt-20 relative overflow-hidden rounded-md bg-teal-800 px-10 py-14 flex flex-col md:flex-row md:items-center justify-between gap-8">
               {/* Dot grid */}
               <div
                 className="absolute inset-0 opacity-[0.04] pointer-events-none"
@@ -215,7 +215,7 @@ const ProgramsContent = () => {
                 Enroll
               </span>
 
-              <div id="enroll" className="relative z-10 max-w-lg">
+              <div id="enroll" className="relative z-10 max-w-lg ">
                 <span className="text-xs font-semibold text-primary uppercase tracking-widest block mb-3">
                   Ready to Begin?
                 </span>
@@ -225,7 +225,7 @@ const ProgramsContent = () => {
                     starts with a single program.
                   </span>
                 </h3>
-                <p className="mt-4 text-white/50  leading-relaxed text-md">
+                <p className="mt-4 text-white/70  leading-relaxed text-md">
                   Reach out to learn which program is the right fit for your
                   farm's current stage and take the first structured step
                   toward building a future-ready enterprise.

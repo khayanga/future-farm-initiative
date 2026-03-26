@@ -11,7 +11,7 @@ type Partner = {
 const partners: Partner[] = [
   {
     name: "WFF Kenya",
-    logo: "/wff-kenya.png",
+    logo: "/kenya.png",
     href: "https://youth.world-food-forum.org/en",
     country: "Kenya",
   },

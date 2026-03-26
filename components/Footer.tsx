@@ -23,7 +23,7 @@ const socials = [
 ];
 
 const Footer = () => (
-  <footer className="relative overflow-hidden bg-foreground text-white">
+  <footer className="relative overflow-hidden bg-teal-900 text-white">
     {/* Dot grid texture */}
     <div
       className="absolute inset-0 opacity-[0.035] pointer-events-none"
@@ -55,15 +55,15 @@ const Footer = () => (
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16 pb-12 border-b border-white/8">
 
         {/* Brand block */}
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-6">
           <div className="flex items-center gap-3 mb-2">
-            <div className=" flex items-center justify-center">
-              <Image src="/footer.png" alt="Logo" width={180} height={180} className="object-cover" />
+            <div className=" flex items-center justify-center bg-white/90 rounded-full p-2">
+              <Image src="/footer.png" alt="Logo" width={180} height={180} className="object-cover rounded-full" />
             </div>
            
           </div>
 
-          <p className="text-white/50 text-sm leading-relaxed max-w-sm mb-8">
+          <p className="text-white/70 text-sm leading-relaxed max-w-sm mb-8">
             Redesigning Africa's agricultural systems for a future-ready tomorrow through technology, and structured transformation.
             An initiative of the{" "}
             <a
@@ -87,7 +87,7 @@ const Footer = () => (
                 <p className="text-2xl font-bold font-serif gradient-text leading-none mb-0.5">
                   {item.stat}
                 </p>
-                <p className="text-[11px] text-white/35 uppercase tracking-widest">
+                <p className="text-[11px] text-white/60 uppercase tracking-widest">
                   {item.label}
                 </p>
               </div>
@@ -96,14 +96,14 @@ const Footer = () => (
 
           {/* Socials */}
           <div className="flex items-center gap-3">
-            <span className="text-xs text-white/30 uppercase tracking-widest mr-1">Follow</span>
+            <span className="text-xs text-white/60 uppercase tracking-widest mr-1">Follow</span>
             {socials.map((s) => (
               <a
                 key={s.label}
                 href={s.href}
                 aria-label={s.label}
                 target="_blank"
-                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:border-primary/50 hover:text-primary hover:bg-primary/10 transition-all duration-200"
+                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:border-primary/50 hover:text-primary hover:bg-primary/10 transition-all duration-200"
               >
                 {s.icon}
               </a>
@@ -121,7 +121,7 @@ const Footer = () => (
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="group flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors duration-200"
+                  className="group flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors duration-200"
                 >
                   <span className="w-0 group-hover:w-3 h-px bg-primary transition-all duration-300" />
                   {link.label}
@@ -132,7 +132,7 @@ const Footer = () => (
         </div>
 
         {/* Contact + Partners */}
-        <div className="lg:col-span-4 flex flex-col gap-8">
+        <div className="lg:col-span-3 flex flex-col gap-8">
           {/* Contact */}
           <div>
             <h4 className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-6">
@@ -147,7 +147,7 @@ const Footer = () => (
                 <li key={item.text}>
                   <a
                     href={item.href}
-                    className=" group flex items-center  gap-3 text-sm text-white/50 hover:text-white transition-colors duration-200"
+                    className=" group flex items-center  gap-3 text-sm text-white/70 hover:text-white transition-colors duration-200"
                   >
                     <span className="mt-0.5 w-7 h-7 rounded-full bg-white/5 group-hover:bg-primary/20 flex items-center justify-center shrink-0 text-primary transition-colors duration-200">
                       {item.icon}
@@ -168,7 +168,7 @@ const Footer = () => (
               {partners.map((p) => (
                 <span
                   key={p}
-                  className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1.5 hover:border-primary/30 hover:text-white/70 transition-colors duration-200 cursor-default"
+                  className="text-xs text-white/70 border border-white/10 rounded-full px-3 py-1.5 hover:border-primary/30 hover:text-white/70 transition-colors duration-200 cursor-default"
                 >
                   {p}
                 </span>
@@ -188,7 +188,7 @@ const Footer = () => (
       </div>
 
       {/* ── Bottom bar ── */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-xs text-white/25">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-xs text-white/50">
         <span>© {currentYear} Future Farms Initiative. All rights reserved.</span>
         <div className="flex items-center gap-5">
           {["Privacy Policy", "Terms of Use"].map((item) => (

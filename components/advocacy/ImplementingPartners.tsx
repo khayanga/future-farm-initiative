@@ -22,9 +22,9 @@ const ImplementingPartners = () => {
       <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/30 to-transparent" />
 
       {/* Watermark */}
-      <span className="absolute text-center bottom-0 text-[16vw] font-serif font-bold text-foreground/5 leading-none select-none pointer-events-none uppercase">
+      {/* <span className="absolute text-center bottom-0 text-[16vw] font-serif font-bold text-foreground/5 leading-none select-none pointer-events-none uppercase">
         Partner
-      </span>
+      </span> */}
 
       <div className="container relative z-10">
         <ScrollReveal>
