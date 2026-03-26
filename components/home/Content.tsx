@@ -13,7 +13,7 @@ const Content = () => {
           <div className="block overflow-hidden">
             <div className="relative mb-8 lg:mb-4 lg:ml-12 lg:float-right w-full lg:w-1/2 max-w-125">
               <Image
-                src="/farmer-tech.jpg"
+                src="/nereah.jpeg"
                 width={500}
                 height={500}
                 alt="African farmer using modern technology in greenhouse"

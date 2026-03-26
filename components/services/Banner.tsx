@@ -10,7 +10,7 @@ const ServiceBanner = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/africa-landscape.jpg"
+          src="/farm8.jpg"
           alt="Aerial view of African farmland with modern agriculture technology"
           fill
           priority

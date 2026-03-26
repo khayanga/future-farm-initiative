@@ -10,7 +10,7 @@ const ProgramsBanner = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/farm2.jpg"
+          src="/programs.jpg"
           alt="Aerial view of African farmland with modern agriculture technology"
           fill
           priority
