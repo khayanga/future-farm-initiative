@@ -71,7 +71,7 @@ const BrandedFacts = () => {
 
               <h2 className="text-3xl max-w-md sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                 Three Truths About{" "}
-                <span className="font-serif italic text-primary">
+                <span className="text-primary">
                   Africa's Food Future
                 </span>
               </h2>

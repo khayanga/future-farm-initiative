@@ -85,7 +85,7 @@ const ProgramsContent = () => {
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground leading-tight max-w-xl">
               Built for real farmers.{" "}
-              <span className="font-serif italic text-primary">
+              <span className=" text-primary">
                 Designed for real transformation
               </span>
             </h2>

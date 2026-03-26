@@ -55,9 +55,9 @@ const WorkContent = () => {
             <span className="text-xs font-semibold text-primary uppercase tracking-[0.2em] block mb-2">
               Why Our Work Matters
             </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight max-w-lg">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl  leading-tight max-w-lg">
               The urgency is{" "}
-              <span className="font-serif italic text-primary">
+              <span className="text-primary">
                 real and immediate.
               </span>
             </h2>

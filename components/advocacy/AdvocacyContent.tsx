@@ -108,7 +108,7 @@ const AdvocacyContent = () => {
              leading-tight max-w-xl"
             >
               Eight positions.{" "}
-              <span className="font-serif italic text-primary">
+              <span className=" text-primary">
                 One direction.
               </span>
             </h2>

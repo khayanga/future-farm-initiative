@@ -16,7 +16,7 @@ const NewsContent = () => {
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
               Two open calls.{" "}
-              <span className="font-serif italic text-primary">
+              <span className="text-primary">
                 One mission.
               </span>
             </h2>
