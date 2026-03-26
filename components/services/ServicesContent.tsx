@@ -8,7 +8,7 @@ type Service = {
   tag: string;
   title: string;
   intro: string;
-  body: string;
+  body: React.ReactNode;
   number: string;
 };
 
@@ -20,7 +20,12 @@ const services: Service[] = [
     title: "Institutional Support",
     intro:
       "We help farmers formalize and professionalize their enterprises.",
-    body: "We support agribusinesses in building strong, market-ready brands and structured business systems. Our work focuses on developing clear market strategies, brand positioning, and brand identity frameworks."
+    body: (
+      <p>
+        We support agribusinesses in building strong, market-ready brands and structured business systems. Our work focuses on developing clear{" "}
+        <strong>market strategies, brand positioning, and brand identity frameworks.</strong>
+      </p>
+    )
   },
   {
     number: "02",
@@ -29,8 +34,11 @@ const services: Service[] = [
     title: "Investor Readiness Support",
     intro:
       "We prepare farms to attract and responsibly utilize capital.",
-    body: "We support agribusinesses in becoming investment-ready and financially structured. This includes setting up clear financial systems, tracking costs, analyzing profitability, and planning for growth, as well as developing strong investment proposals. We also guide businesses in understanding different financing options and prepare them to confidently engage with investors, partners, and funders."
-  ,
+    body: (
+      <p>
+        We support agribusinesses in becoming investment-ready and financially structured. This includes setting up clear <strong>financial systems, tracking costs, analyzing profitability, and planning for growth</strong>, as well as developing strong investment proposals. We also guide businesses in understanding different financing options and prepare them to confidently engage with investors, partners, and funders.
+      </p>
+    )
   },
   {
     number: "03",
@@ -39,7 +47,11 @@ const services: Service[] = [
     title: "Technology Readiness Support",
     intro:
       "We enable farmers to adopt and integrate modern agricultural technologies effectively.",
-    body: "We support agribusinesses in adopting practical, tech-enabled systems. This includes assessing digital capacity and introducing tools and knowledge that strengthen data use, and preparing for technology-driven monitoring and compliance. The goal is to ensure technology adoption improves productivity, efficiency, and market access."
+    body: (
+      <p>
+        We support agribusinesses in adopting practical, tech-enabled systems. This includes <strong>assessing digital capacity and introducing tools and knowledge</strong> that strengthen data use, and preparing for technology-driven monitoring and compliance. The goal is to ensure technology adoption improves productivity, efficiency, and market access.
+      </p>
+    )
 
 
   },
@@ -115,9 +127,9 @@ const ServicesContent = () => {
 
                 {/* Body text */}
                 <div className="lg:col-span-6 lg:pt-1">
-                  <p className="text-muted-foreground text-base leading-relaxed">
+                  <div className="text-muted-foreground text-base leading-relaxed">
                     {service.body}
-                  </p>
+                  </div>
 
                   {/* Accent line */}
                   <div className="mt-8 h-0.5 w-0 bg-linear-to-r from-primary to-primary/20 group-hover:w-24 transition-all duration-500" />
