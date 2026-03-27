@@ -21,6 +21,11 @@ const partners: Partner[] = [
     logo: "/jla.png",
     href: "https://jacobsladder.africa/who-we-are/",
   },
+   {
+    name: "Mkulima Scrore",
+    logo: "/mkulima.jpg",
+    href: "https://mkulimascore360.com/",
+  },
 ];
 
 const PartnersSection = () => {

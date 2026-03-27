@@ -18,21 +18,21 @@ const team: TeamMember[] = [
   {
     name: "Alice Ayuma",
     role: "Founder & Executive Director",
-    bio: "Founder driving vision and partnerships, building scalable agribusiness solutions focused on empowering smallholder farmers across emerging markets.",
+    bio: "I champion the FFI mission to build inclusive, climate-resilient farming systems by reimagining how agriculture works for farmers, the planet and the future.",
     image: "/alice.jpg",
     socials: { linkedin: "https://www.linkedin.com/in/alice-ayuma/", email: "aliceaannette96@gmail.com" },
   },
   {
     name: "Virgil Khayanga",
     role: "Head of Technology and Digital Transformation",
-    bio: "Technology leader delivering scalable digital platforms, to optimize agricultural operations and enhance decision-making processes.",
+    bio: "I deliver scalable digital platforms, to optimize agricultural operations and enhance decision-making processes.",
     image: "/virgil.jpg",
     socials: { linkedin: "https://www.linkedin.com/in/virgil-khayanga-113b18262/", email: "devkhayanga@gmail.com" },
   },
   {
-    name:"Lydhia Kiswii",
+    name:"Lydia Kiswii",
     role:"Head of Programs",
-    bio:"Programs lead designing impactful initiatives, managing partnerships and implementation frameworks that drive sustainable adoption among farming communities.",
+    bio:"I lead the delivery of transformative programs empowering farmers with regenerative practices, climate-smart innovations, and data-driven solutions that enhance resilience, productivity, and sustainability.",
     image:"/lydia.jpg",
     socials: { linkedin:"https://www.linkedin.com/in/lydhia-kiswii-msc-613b29131/", email: "lydhiakiswii@gmail.com" }
   }
