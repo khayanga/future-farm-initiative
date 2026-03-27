@@ -1,27 +1,30 @@
 import ScrollReveal from "../ScrollReveal";
 import Link from "next/link";
-import { ArrowRight, Camera, FileText, Video, Users, Sprout, CheckCircle2, CalendarDays } from "lucide-react";
+import {
+  ArrowRight,
+  Camera,
+  FileText,
+  Video,
+  Users,
+  Sprout,
+  CheckCircle2,
+  CalendarDays,
+} from "lucide-react";
 
 const NewsContent = () => {
-
-    const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
   return (
     <section className="bg-background">
-      
-
       <div className="px-8 py-20">
         <div className="container">
           <ScrollReveal>
             <div className="space-y-16">
-
               {/* ── CARD 1: Call for Stories ── */}
               <article className="group relative rounded-md border border-border overflow-hidden hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500">
-
                 {/* Top colour bar */}
                 <div className="h-1 bg-linear-to-r from-teal-400 via-primary to-primary/30" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-12">
-
                   {/* Left accent column */}
                   <div className="lg:col-span-3 bg-linear-to-br from-teal-500/10 via-primary/5 to-transparent p-8 lg:p-10 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-border">
                     <div>
@@ -47,11 +50,23 @@ const NewsContent = () => {
                         Submit As
                       </p>
                       {[
-                        { icon: <FileText className="w-4 h-4" />, label: "Written story with photos" },
-                        { icon: <Camera className="w-4 h-4" />, label: "Photo essay" },
-                        { icon: <Video className="w-4 h-4" />, label: "Short video (90 secs)" },
+                        {
+                          icon: <FileText className="w-4 h-4" />,
+                          label: "Written story with photos",
+                        },
+                        {
+                          icon: <Camera className="w-4 h-4" />,
+                          label: "Photo essay",
+                        },
+                        {
+                          icon: <Video className="w-4 h-4" />,
+                          label: "Short video (90 secs)",
+                        },
                       ].map((type) => (
-                        <div key={type.label} className="flex items-center gap-3 text-sm text-foreground/70">
+                        <div
+                          key={type.label}
+                          className="flex items-center gap-3 text-sm text-foreground/70"
+                        >
                           <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
                             {type.icon}
                           </div>
@@ -79,9 +94,14 @@ const NewsContent = () => {
                           "Women in agro-processing",
                           "Women in agritech",
                         ].map((who) => (
-                          <div key={who} className="flex items-start gap-3 p-3 rounded-md bg-muted/40 border border-border group-hover:border-primary/10 transition-colors duration-300">
+                          <div
+                            key={who}
+                            className="flex items-start gap-3 p-3 rounded-md bg-muted/40 border border-border group-hover:border-primary/10 transition-colors duration-300"
+                          >
                             <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                            <span className="text-sm text-foreground/70 leading-snug">{who}</span>
+                            <span className="text-sm text-foreground/70 leading-snug">
+                              {who}
+                            </span>
                           </div>
                         ))}
                       </div>
@@ -90,19 +110,20 @@ const NewsContent = () => {
                     {/* Pull quote */}
                     <blockquote className="relative border-l-4 border-primary pl-6 py-2 my-8">
                       <p className="text-lg font-semibold text-foreground font-serif italic leading-relaxed">
-                        "Your story matters help us highlight the vital role
-                        of women in Africa's food systems."
+                        "Your story matters help us highlight the vital role of
+                        women in Africa's food systems."
                       </p>
                     </blockquote>
 
                     {/* CTA */}
                     <div className="flex flex-col sm:flex-row gap-4 mt-8 pt-8 border-t border-border">
-                      <Link
-                        href="/contact"
+                      <a
+                        href="mailto:futurefarms@gmail.com"
+                        
                         className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
                       >
                         Submit Your Story <ArrowRight className="w-4 h-4" />
-                      </Link>
+                      </a>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                         Submissions open now · {currentYear} cohort
@@ -114,12 +135,10 @@ const NewsContent = () => {
 
               {/* ── CARD 2: Farming as a Business Applications ── */}
               <article className="group relative rounded-md border border-border overflow-hidden hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500">
-
                 {/* Top colour bar */}
                 <div className="h-1 bg-linear-to-r from-primary via-emerald-400 to-primary/20" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-12">
-
                   {/* Left accent column */}
                   <div className="lg:col-span-3 bg-linear-to-br from-primary/10 via-emerald-500/5 to-transparent p-8 lg:p-10 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-border">
                     <div>
@@ -133,8 +152,8 @@ const NewsContent = () => {
                       </h3>
                       <p className="text-muted-foreground text-md leading-relaxed">
                         In celebration of IYWF 2026, the Future Farms Initiative
-                        invites 100 women farmers to join its flagship Farming as
-                        a Business program.
+                        invites 100 women farmers to join its flagship Farming
+                        as a Business program.
                       </p>
                     </div>
 
@@ -151,7 +170,6 @@ const NewsContent = () => {
 
                   {/* Right main content */}
                   <div className="lg:col-span-9 p-8 lg:p-10">
-
                     {/* Program benefits */}
                     <div className="mb-8">
                       <div className="flex items-center gap-2 mb-5">
@@ -171,9 +189,14 @@ const NewsContent = () => {
                           "Mentorship from industry leaders",
                           "Exposure to investment opportunities",
                         ].map((benefit) => (
-                          <div key={benefit} className="flex items-start gap-3 p-3 rounded-md bg-muted/40 border border-border group-hover:border-primary/10 transition-colors duration-300">
+                          <div
+                            key={benefit}
+                            className="flex items-start gap-3 p-3 rounded-md bg-muted/40 border border-border group-hover:border-primary/10 transition-colors duration-300"
+                          >
                             <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                            <span className="text-sm text-foreground/70 leading-snug">{benefit}</span>
+                            <span className="text-sm text-foreground/70 leading-snug">
+                              {benefit}
+                            </span>
                           </div>
                         ))}
                       </div>
@@ -222,7 +245,6 @@ const NewsContent = () => {
                   </div>
                 </div>
               </article>
-
             </div>
 
             {/* Stay updated strip */}
