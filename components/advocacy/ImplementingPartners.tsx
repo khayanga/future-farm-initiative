@@ -46,10 +46,13 @@ const ImplementingPartners = () => {
             </p>
 
             <div className="mx-auto">
+              <Link href="/contact" className="inline-block mt-8">
               <Button variant="outline" size="lg" className="mt-8 border border-primary" >
                 Explore Partnership Opportunities
                 <ArrowRight className="ml-2" />
               </Button>
+              </Link>
+              
             </div>
 
             <div className="mt-8 h-px bg-linear-to-r from-transparent via-border to-transparent" />
