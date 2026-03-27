@@ -7,27 +7,7 @@ const NewsContent = () => {
     const currentYear = new Date().getFullYear();
   return (
     <section className="bg-background">
-      {/* Intro strip */}
-      <div className="bg-teal-900 px-8 py-12 mt-6 rounded-md mx-2">
-        <div className="container flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div>
-            <span className="text-xs font-semibold text-primary uppercase tracking-[0.2em] block mb-3">
-              Active in {currentYear}
-            </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
-              Two open calls.{" "}
-              <span className="text-primary">
-                One mission.
-              </span>
-            </h2>
-          </div>
-          <p className="text-white/70 text-md leading-relaxed max-w-sm md:text-right">
-            In {currentYear}, we are centering women their voices, their farms, their
-            futures. Both calls are open now. Don't miss your chance to
-            participate.
-          </p>
-        </div>
-      </div>
+      
 
       <div className="px-8 py-20">
         <div className="container">

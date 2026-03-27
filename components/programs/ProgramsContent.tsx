@@ -63,9 +63,9 @@ const programs = [
       "Performance tracking & data use",
       "Consistent market-ready output standards",
     ],
-    accent: "from-teal-500/30 via-teal-500/10 to-transparent",
-    iconColor: "bg-teal-500/10 text-teal-600",
-    iconHover: "group-hover:bg-teal-500 group-hover:text-white",
+    accent: "from-teal-900/30 via-teal-900/10 to-transparent",
+    iconColor: "bg-teal-900/10 text-teal-900",
+    iconHover: "group-hover:bg-teal-900 group-hover:text-white",
     statLabel: "Program Focus",
     stat: "Yield & Efficiency",
   },
@@ -81,7 +81,7 @@ const ProgramsContent = () => {
         <div className="container flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <span className="text-xs font-semibold text-primary uppercase tracking-[0.2em] block mb-3">
-              Three Core Programs
+              Core Programs
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground leading-tight max-w-xl">
               Built for real farmers.{" "}

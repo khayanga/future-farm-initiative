@@ -52,13 +52,13 @@ const Footer = () => (
     <div className="relative z-10 container px-8 ">
 
       {/* ── Top section ── */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16 pb-12 border-b border-white/8">
+      <div className="grid grid-cols-1  lg:grid-cols-12 gap-12 pt-16 pb-12 border-b border-white/8 max-w-6xl mx-auto">
 
         {/* Brand block */}
         <div className="lg:col-span-6">
           <div className="flex items-center gap-3 mb-2">
-            <div className=" flex items-center justify-center bg-white/90 rounded-full p-2">
-              <Image src="/footer.png" alt="Logo" width={180} height={180} className="object-cover rounded-full" />
+            <div className=" flex items-center justify-center bg-white/90  p-2">
+              <Image src="/footer.png" alt="Logo" width={150} height={150} className="object-cover " />
             </div>
            
           </div>
@@ -160,7 +160,7 @@ const Footer = () => (
           </div>
 
           {/* Partners */}
-          <div>
+          {/* <div>
             <h4 className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-4">
               Implementing Partners
             </h4>
@@ -174,7 +174,7 @@ const Footer = () => (
                 </span>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* CTA */}
           <Link
@@ -188,7 +188,7 @@ const Footer = () => (
       </div>
 
       {/* ── Bottom bar ── */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-xs text-white/50">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-xs text-white/50 max-w-6xl mx-auto">
         <span>© {currentYear} Future Farms Initiative. All rights reserved.</span>
         <div className="flex items-center gap-5">
           {["Privacy Policy", "Terms of Use"].map((item) => (

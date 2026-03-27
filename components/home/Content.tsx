@@ -1,11 +1,13 @@
 import Link from "next/link";
 import ScrollReveal from "../ScrollReveal";
 import { Button } from "../ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 
 const Content = () => {
+
+  const currentYear = new Date().getFullYear();
   return (
     <section className="px-8 py-12">
       <div className="container">
@@ -25,7 +27,7 @@ const Content = () => {
                   2.5B
                 </p>
                 <p className="text-sm text-muted-foreground mt-1">
-                 Africa must produce at least 30% more food by 2050 to feed its population.
+                  Africa must produce at least 30% more food by 2050 to feed its population.
                 </p>
               </div>
             </div>
@@ -61,6 +63,44 @@ const Content = () => {
                   Learn More <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
+            </div>
+          </div>
+
+          {/* Intro strip */}
+          <div className="bg-teal-900 px-8 py-12 mt-14 md:mt-16 lg:mt-28 rounded-md mx-2">
+            <div className="container flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+              {/* Left */}
+              <div>
+                <span className="text-xs font-semibold text-primary uppercase tracking-[0.2em] block mb-3">
+                  Active in {currentYear}
+                </span>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
+                  Two open calls.{" "}
+                  <span className="text-primary">
+                    One mission.
+                  </span>
+                </h2>
+              </div>
+
+              {/* Right */}
+              <div className="flex flex-col items-start md:items-end gap-4 max-w-sm">
+                <p className="text-white/70 text-md leading-relaxed md:text-right">
+                  In {currentYear}, we are centering women their voices, their farms, their
+                  futures. Both calls are open now. Don't miss your chance to
+                  participate.
+                </p>
+
+                {/* CTA Button */}
+                <Link
+                  href="/news"
+                  className="group inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary/40 rounded-md px-5 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-200"
+                >
+                  View Updates
+                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
+                </Link>
+              </div>
+
             </div>
           </div>
         </ScrollReveal>

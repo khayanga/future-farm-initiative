@@ -70,7 +70,7 @@ const TeamSection = () => {
                 style={{ animationDelay: `${index * 80}ms` }}
               >
                 {/* Image */}
-                <div className="relative w-full h-82 md:h-92 overflow-hidden">
+                <div className="relative w-full h-120 md:h-92 overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -86,6 +86,8 @@ const TeamSection = () => {
                       {member.socials.linkedin && (
                         <a
                           href={member.socials.linkedin}
+                          target="_blank"
+
                           aria-label="LinkedIn"
                           className="bg-white/90 hover:bg-white text-foreground rounded-full p-2 transition-colors"
                         >

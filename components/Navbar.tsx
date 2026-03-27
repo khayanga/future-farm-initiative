@@ -23,8 +23,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-md supports-backdrop-filter:bg-background/60">
       <div className="container mx-auto px-4 flex items-center justify-between h-20">
-        <Link href="/" >
-          <Image src="/initiative.png" alt="Future Farms Logo" width={120} height={120} className="inline-block mr-2" />
+        <Link href="https://www.linkedin.com/company/arbarne-agriculture-group/"  target="_blank" rel="noopener noreferrer">
+          <Image src="/logo2.png" alt="Future Farms Logo" width={250} height={250} className="inline-block mr-2" />
            
         </Link>
 

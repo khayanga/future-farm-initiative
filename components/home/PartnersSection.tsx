@@ -15,12 +15,7 @@ const partners: Partner[] = [
     href: "https://youth.world-food-forum.org/en",
     country: "Kenya",
   },
-  {
-    name: "WFF Rwanda",
-    logo: "/wff-rwanda.png",
-    href: "https://www.world-food-forum.org/",
-    country: "Rwanda",
-  },
+  
   {
     name: "JLA",
     logo: "/jla.png",

@@ -10,9 +10,9 @@ const facts = [
     statSub: "people to feed by 2050",
     headline: "Food security is  urgent.",
     body: "With Africa's population projected to reach 2.5 billion by 2050, the continent faces an unprecedented demand for safe, reliable, and locally produced food. The window to act is now.",
-    accent: "from-emerald-500/30 to-transparent",
+    accent: "from-teal-900/30 to-transparent",
     iconBg:
-      "bg-emerald-500/10 text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white",
+      "bg-teal-900/10 text-teal-900 group-hover:bg-teal-900 group-hover:text-white",
   },
   {
     number: "02",
@@ -34,9 +34,9 @@ const facts = [
     statSub: "of arable land underutilized",
     headline: "When farming becomes a business, everything changes.",
     body: "Treating farming as a structured enterprise unlocks access to finance, builds climate resilience, and secures stable incomes for farmers and their families generation after generation.",
-    accent: "from-teal-500/30 to-transparent",
+    accent: "from-teal-900/30 to-transparent",
     iconBg:
-      "bg-teal-500/10 text-teal-600 group-hover:bg-teal-500 group-hover:text-white",
+      "bg-teal-900/10 text-teal-600 group-hover:bg-teal-900 group-hover:text-white",
   },
 ];
 
@@ -79,8 +79,7 @@ const BrandedFacts = () => {
 
             <div >
               <p className="text-muted-foreground text-md max-w-xs md:text-right leading-relaxed">
-              Every initiative we run is anchored in these realities. Food
-              security is urgent. 
+              Every initiative we run is anchored in these realities.
             </p>
 
             </div>

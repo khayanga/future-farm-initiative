@@ -36,7 +36,7 @@ const WorkBanner = () => {
           </p>
         </ScrollReveal> */}
 
-        <ScrollReveal delay={0.3}>
+        {/* <ScrollReveal delay={0.3}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               className="rounded-md px-8 py-6 text-base text-white 
@@ -59,7 +59,7 @@ const WorkBanner = () => {
               <Link href="/contact">Contact Us</Link>
             </Button>
           </div>
-        </ScrollReveal>
+        </ScrollReveal> */}
       </div>
     </section>
   );
