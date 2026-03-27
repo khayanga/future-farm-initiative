@@ -20,11 +20,13 @@ const partners: Partner[] = [
     name: "JLA",
     logo: "/jla.png",
     href: "https://jacobsladder.africa/who-we-are/",
+    country: "Kenya",
   },
    {
     name: "Mkulima Scrore",
     logo: "/mkulima.jpg",
     href: "https://mkulimascore360.com/",
+    country: "Kenya",
   },
 ];
 
