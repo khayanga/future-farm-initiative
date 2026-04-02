@@ -29,13 +29,13 @@ const ProgramsBanner = () => {
           </h1>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.2}>
+        {/* <ScrollReveal delay={0.2}>
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
            We equip farmers with everything required to transition into
             structured, profitable, and future-ready enterprises through
             three focused, practical programs.
           </p>
-        </ScrollReveal>
+        </ScrollReveal> */}
 
         <ScrollReveal delay={0.3}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

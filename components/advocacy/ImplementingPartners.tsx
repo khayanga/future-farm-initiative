@@ -36,7 +36,7 @@ const ImplementingPartners = () => {
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-5">
               Join the{" "}
-              <span className="font-serif italic text-primary">Movement</span>
+              <span className="text-primary">Movement</span>
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">

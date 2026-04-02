@@ -48,7 +48,7 @@ const Footer = () => (
     <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-primary via-primary/40 to-transparent" />
 
     {/* Ghost text */}
-    <span className="absolute -bottom-4 right-0 text-[15vw] text-center font-serif font-bold text-white/2 leading-none select-none pointer-events-none pr-4 uppercase">
+    <span className="absolute -bottom-4 right-0 text-[15vw] text-center font-georgia font-bold text-white/2 leading-none select-none pointer-events-none pr-4 uppercase">
       Future Farms
     </span>
 

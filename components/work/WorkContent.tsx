@@ -1,5 +1,10 @@
 import ScrollReveal from "../ScrollReveal";
-import { TrendingDown, CircleDollarSign, Zap, CloudLightning } from "lucide-react";
+import {
+  TrendingDown,
+  CircleDollarSign,
+  Zap,
+  CloudLightning,
+} from "lucide-react";
 
 type Challenge = {
   icon: React.ReactNode;
@@ -57,9 +62,7 @@ const WorkContent = () => {
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl  leading-tight max-w-lg">
               The urgency is{" "}
-              <span className="text-primary">
-                real and immediate.
-              </span>
+              <span className="text-primary">real and immediate.</span>
             </h2>
           </div>
           <p className="text-muted-foreground text-base leading-relaxed max-w-sm md:text-right">
@@ -116,7 +119,10 @@ const WorkContent = () => {
             </div>
 
             {/* ── Bottom CTA strip ── */}
-            <div  id ="act" className="mt-20 relative overflow-hidden rounded-md bg-muted/40 border border-border px-10 py-12 flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div
+              id="act"
+              className="mt-20 relative overflow-hidden rounded-md bg-muted/40 border border-border px-10 py-12 flex flex-col md:flex-row md:items-center justify-between gap-8"
+            >
               {/* Decorative large text */}
               <span className="absolute right-6 top-1/2 -translate-y-1/2 text-[8rem] font-serif font-bold text-foreground/3 leading-none select-none pointer-events-none">
                 ACT
@@ -127,15 +133,15 @@ const WorkContent = () => {
                   The Response
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-bold text-foreground font-serif leading-tight">
-                  These aren't isolated problems.{" "}
-                  <span className="gradient-text italic">
-                    They are a system failure.
+                  These aren't isolated challenges ,{" "}
+                  <span className="text-primary">
+                    they reflect a deeper system failure
                   </span>
                 </h3>
                 <p className="mt-4 text-md text-muted-foreground text-base leading-relaxed">
-                  The Future Farms Initiative was built to address these
-                  failures at the root through structured
-                  support, and a long-term commitment to farmer transformation.
+                  The Future Farms Initiative was designed to address these gaps
+                  at their root, providing structured support and a long-term
+                  pathway for farmer transformation.
                 </p>
               </div>
 

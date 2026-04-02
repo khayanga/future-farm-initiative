@@ -148,10 +148,10 @@ const AdvocacyContent = () => {
                         {pos.tag}
                       </span>
                     </div>
-                    <h3 className="text-xl font-bold text-foreground font-serif leading-snug mb-3">
+                    <h3 className="text-xl font-bold text-foreground font-georgia leading-snug mb-3">
                       {pos.title}
                     </h3>
-                    <p className="text-sm font-medium text-foreground/70 italic leading-relaxed">
+                    <p className="text-sm font-medium text-foreground/70  leading-relaxed">
                       "{pos.summary}"
                     </p>
                   </div>

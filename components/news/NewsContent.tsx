@@ -34,7 +34,7 @@ const NewsContent = () => {
                       </div>
                       <h3 className="text-2xl sm:text-3xl font-bold text-foreground font-serif leading-snug mb-4">
                         Women Farmers{" "}
-                        <span className="linear-text italic">2026</span>
+                        <span className="linear-text ">{currentYear}</span>
                       </h3>
                       <p className="text-muted-foreground text-md leading-relaxed">
                         We're amplifying the voices of women farmers across East
@@ -109,7 +109,7 @@ const NewsContent = () => {
 
                     {/* Pull quote */}
                     <blockquote className="relative border-l-4 border-primary pl-6 py-2 my-8">
-                      <p className="text-lg font-semibold text-foreground font-serif italic leading-relaxed">
+                      <p className="text-md font-semibold text-foreground leading-relaxed">
                         "Your story matters help us highlight the vital role of
                         women in Africa's food systems."
                       </p>
@@ -118,13 +118,15 @@ const NewsContent = () => {
                     {/* CTA */}
                     <div className="flex flex-col sm:flex-row gap-4 mt-8 pt-8 border-t border-border">
                       <a
-                        href="mailto:futurefarms@gmail.com"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=futurefarms@gmail.com&su=Story Submission&body=Hi Future Farms,%0D%0A%0D%0AI would like to submit my story:%0D%0A"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         
                         className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
                       >
                         Submit Your Story <ArrowRight className="w-4 h-4" />
                       </a>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-2 text-md text-muted-foreground">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                         Submissions open now · {currentYear} cohort
                       </div>
@@ -148,10 +150,10 @@ const NewsContent = () => {
                       </div>
                       <h3 className="text-2xl sm:text-3xl font-bold text-foreground font-serif leading-snug mb-4">
                         Farming as a Business{" "}
-                        <span className="linear-text italic">2026</span>
+                        <span className="linear-text ">{currentYear}</span>
                       </h3>
                       <p className="text-muted-foreground text-md leading-relaxed">
-                        In celebration of IYWF 2026, the Future Farms Initiative
+                        In celebration of IYWF {currentYear}, the Future Farms Initiative
                         invites 100 women farmers to join its flagship Farming
                         as a Business program.
                       </p>
@@ -217,7 +219,7 @@ const NewsContent = () => {
 
                     {/* Pull quote */}
                     <blockquote className="relative border-l-4 border-primary pl-6 py-2 mb-8">
-                      <p className="text-lg font-semibold text-foreground font-serif italic leading-relaxed">
+                      <p className="text-md font-semibold text-foreground leading-relaxed">
                         "Transform your farm into a future-ready, profitable,
                         and sustainable enterprise."
                       </p>
@@ -241,7 +243,7 @@ const NewsContent = () => {
                         Learn About the Program
                       </Link>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground sm:ml-auto">
-                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                        <span className="w-2 h-2 text-sm rounded-full bg-emerald-500 animate-pulse" />
                         Applications open · Limited spots
                       </div>
                     </div>
@@ -253,10 +255,10 @@ const NewsContent = () => {
             {/* Stay updated strip */}
             <div className="mt-20 rounded-md bg-muted/40 border border-border px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
-                <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">
+                <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-2">
                   Stay in the Loop
                 </p>
-                <h3 className="text-xl font-bold text-foreground font-serif">
+                <h3 className="text-xl font-bold text-foreground ">
                   Don't miss future calls and program launches.
                 </h3>
               </div>

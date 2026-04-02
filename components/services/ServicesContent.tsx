@@ -69,7 +69,7 @@ const ServicesContent = () => {
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-5">
               Three Core{" "}
-              <span className="font-serif linear-text italic">Pillars</span>{" "}
+              <span className="font-georgia ">Pillars</span>{" "}
               of Transformation
             </h2>
             <div className="flex flex-col gap-6 md:flex-row  justify-between  ">

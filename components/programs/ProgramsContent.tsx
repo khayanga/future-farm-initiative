@@ -75,9 +75,11 @@ const ProgramsContent = () => {
   return (
     <section className="bg-background">
       {/* Intro strip */}
-      
-      <div className=" px-8 py-12 mt-12
-      ">
+
+      <div
+        className=" px-8 py-12 mt-12
+      "
+      >
         <div className="container flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <span className="text-xs font-semibold text-primary uppercase tracking-[0.2em] block mb-3">
@@ -150,7 +152,7 @@ const ProgramsContent = () => {
                       </h3>
 
                       {/* Hook */}
-                      <p className="text-base font-semibold text-primary mb-5 italic">
+                      <p className="text-base font-semibold text-primary mb-5 ">
                         "{program.hook}"
                       </p>
 
@@ -218,19 +220,19 @@ const ProgramsContent = () => {
               </span>
 
               <div id="enroll" className="relative z-10 max-w-lg ">
-                <span className="text-xs font-semibold text-primary uppercase tracking-widest block mb-3">
+                <span className="text-sm font-semibold text-primary uppercase tracking-widest block mb-3">
                   Ready to Begin?
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-bold text-white font-serif leading-tight">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white  leading-tight">
                   Every farm transformation{" "}
-                  <span className="linear-text italic">
-                    starts with a single program.
+                  <span className="text-primary">
+                    begins with the right starting point.
                   </span>
                 </h3>
                 <p className="mt-4 text-white/70  leading-relaxed text-md">
-                  Reach out to learn which program is the right fit for your
-                  farm's current stage and take the first structured step
-                  toward building a future-ready enterprise.
+                  Reach out to discover the program that aligns with your farm’s
+                  current stage and take your first step toward building a
+                  structured, future-ready enterprise.
                 </p>
               </div>
 

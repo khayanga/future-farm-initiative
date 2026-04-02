@@ -31,7 +31,7 @@ const Banner = () => {
 
         <ScrollReveal delay={0.2}>
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-             Our Mission:To lead the transition of African agriculture from traditional, inefficient systems to future-ready, productive, and profitable farm enterprises.
+             Our Mission is to lead the transition of African agriculture from traditional, inefficient systems to future-ready, productive, and profitable farm enterprises.
 
           </p>
         </ScrollReveal>

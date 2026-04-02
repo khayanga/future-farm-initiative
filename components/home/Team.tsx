@@ -40,7 +40,7 @@ const team: TeamMember[] = [
 
 const TeamSection = () => {
   return (
-    <section className="px-8 py-20 bg-muted/30">
+    <section className="px-12 py-20 bg-muted/30">
       <div className="container">
          <div className="mb-14">
             <span className="text-sm font-semibold text-primary uppercase tracking-wider block mb-3">

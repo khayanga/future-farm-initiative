@@ -114,7 +114,7 @@ const Testimonials = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
               The People Behind{" "}
               <span className=" text-primary">
-                the Numbers
+                great transition
               </span>
             </h2>
           </div>

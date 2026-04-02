@@ -20,7 +20,7 @@ const facts = [
     label: "Tech-Led Agriculture",
     stat: "↑ 3×",
     statSub: "productivity potential with tech",
-    headline: "Farming as a business unlocks finance, resilience, and lasting incomes.",
+    headline: "Improved Productivity & efficiency is the fastest path to feeding more.",
     body: "Boosting farm productivity through technology is the most direct route to feeding more people while cutting post-harvest losses. Smart farming isn't the future — it's the present requirement.",
     accent: "from-primary/30 to-transparent",
     iconBg:
@@ -32,8 +32,8 @@ const facts = [
     label: "Farming as a Business",
     stat: "65%",
     statSub: "of arable land underutilized",
-    headline: "When farming becomes a business, everything changes.",
-    body: "Treating farming as a structured enterprise unlocks access to finance, builds climate resilience, and secures stable incomes for farmers and their families generation after generation.",
+    headline: "Farming as a business unlocks finance, resilience, and lasting incomes.",
+    body: "Treating farming as a business unlocks finance, builds climate resilience, and secures farmer incomes",
     accent: "from-teal-900/30 to-transparent",
     iconBg:
       "bg-teal-900/10 text-teal-600 group-hover:bg-teal-900 group-hover:text-white",
@@ -134,7 +134,8 @@ const BrandedFacts = () => {
 
                 {/* Text */}
                 <div className="flex flex-col gap-3 border-t border-border pt-6">
-                  <h3 className="text-base font-bold text-foreground/80 leading-snug">
+                  <h3 className="text-base font-bold text-foreground/65
+                   leading-snug">
                     {fact.headline}
                   </h3>
 
