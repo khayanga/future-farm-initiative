@@ -49,7 +49,7 @@ const TeamSection = () => {
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight max-w-xl">
                 Meet the{" "}
-                <span className="font-serif linear-text italic">Team</span>
+                <span className=" linear-text ">Team</span>
               </h2>
               <p className="text-muted-foreground text-base max-w-md lg:text-right">
                We believe Africa’s farms must be designed for the future, resilient, efficient, and productive. Our role is to enable the creation of farm systems that integrate technology, sustainability, and local context to enable farmers and agribusinesses to thrive in a changing climate.

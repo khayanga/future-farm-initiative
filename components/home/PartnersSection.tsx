@@ -42,7 +42,7 @@ const PartnersSection = () => {
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground leading-tight">
               Trusted{" "}
-              <span className="font-serif linear-text italic">Partners</span>
+              <span className="font-georgia">Partners</span>
             </h2>
             <p className="text-muted-foreground text-md mt-4 max-w-lg mx-auto">
               Working alongside leading organisations who share our commitment
