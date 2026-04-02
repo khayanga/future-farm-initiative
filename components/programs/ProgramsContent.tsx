@@ -5,6 +5,7 @@ import { Briefcase, PiggyBank, BarChart2, ArrowRight } from "lucide-react";
 const programs = [
   {
     number: "01",
+    status: "open",
     icon: <Briefcase className="w-6 h-6" />,
     tag: "Enterprise Transformation",
     title: "Farming as a Business Program",
@@ -49,6 +50,7 @@ const programs = [
   // },
   {
     number: "02",
+    status: "closed",
     icon: <BarChart2 className="w-6 h-6" />,
     tag: "Operational Excellence",
     title: "Farm Management for Climate Resilience",
@@ -135,14 +137,28 @@ const ProgramsContent = () => {
                     {/* Center: main content */}
                     <div className="lg:col-span-6 p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border">
                       {/* Icon + tag */}
-                      <div className="flex items-center gap-3 mb-6">
-                        <div
-                          className={`flex items-center justify-center w-11 h-11 rounded-full ${program.iconColor} ${program.iconHover} transition-all duration-300 shrink-0`}
-                        >
-                          {program.icon}
+                      <div className="flex items-center justify-between mb-6">
+                        <div className="flex items-center gap-3">
+                          <div
+                            className={`flex items-center justify-center w-11 h-11 rounded-full ${program.iconColor} ${program.iconHover} transition-all duration-300 shrink-0`}
+                          >
+                            {program.icon}
+                          </div>
+
+                          <span className="text-xs font-semibold text-primary/70 border border-primary/20 rounded-full px-3 py-1 uppercase tracking-widest">
+                            {program.tag}
+                          </span>
                         </div>
-                        <span className="text-xs font-semibold text-primary/70 border border-primary/20 rounded-full px-3 py-1 uppercase tracking-widest">
-                          {program.tag}
+
+                        {/* STATUS BADGE */}
+                        <span
+                          className={`text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border transition-all duration-300 ${
+                            program.status === "open"
+                              ? "bg-green-500/10 text-green-600 border-green-500/30"
+                              : "bg-red-500/10 text-red-600 border-red-500/30"
+                          }`}
+                        >
+                          {program.status}
                         </span>
                       </div>
 
@@ -188,15 +204,22 @@ const ProgramsContent = () => {
                         ))}
                       </ul>
 
-                      <Link
-                        href="https://forms.gle/Y2NTsbFdk5rwU7Hp9"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all duration-200"
-                      >
-                        Enroll in this program
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
+                      {program.status === "open" ? (
+                        <Link
+                          href="https://forms.gle/Y2NTsbFdk5rwU7Hp9"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-8 inline-flex items-center gap-2 text-md font-semibold text-primary hover:gap-3 transition-all duration-200"
+                        >
+                          Applications Open
+                          <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      ) : (
+                        <span className="mt-8 inline-flex items-center gap-2 text-md font-semibold text-muted-foreground cursor-not-allowed opacity-60">
+                          Applications Closed
+                          <ArrowRight className="w-4 h-4" />
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
