@@ -76,7 +76,7 @@ const Testimonials = () => {
   const t = testimonials[active];
 
   return (
-    <section className="relative overflow-hidden bg-teal-900 px-8 py-12 mb-16 mt-10 md:mt-16">
+    <section className="relative overflow-hidden bg-teal-900 px-8 py-12 mb-16 mt-10 md:mt-16 rounded-md">
       {/* Dot grid */}
       <div
         className="absolute inset-0 opacity-[0.035] pointer-events-none"
@@ -109,7 +109,7 @@ const Testimonials = () => {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
             <span className="text-xs font-semibold text-primary uppercase tracking-[0.2em] block mb-3">
-              Voices from the Field
+              Voices from the Industry
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
               The People Behind{" "}
@@ -201,7 +201,7 @@ const Testimonials = () => {
               {/* Quote icon */}
               <Quote className="w-10 h-10 text-primary/30 mb-4 rotate-180" />
 
-              <blockquote className="text-md sm:text-md lg:text-xl  text-white leading-[1.45] mb-6">
+              <blockquote className="text-md sm:text-md lg:text-md  text-white leading-[1.45] mb-6">
                 "{t.quote}"
               </blockquote>
 

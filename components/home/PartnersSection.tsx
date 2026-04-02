@@ -23,7 +23,7 @@ const partners: Partner[] = [
     country: "Kenya",
   },
    {
-    name: "Mkulima Scrore",
+    name: "Mkulima Score",
     logo: "/mkulima.jpg",
     href: "https://mkulimascore360.com/",
     country: "Kenya",
@@ -44,7 +44,7 @@ const PartnersSection = () => {
               Trusted{" "}
               <span className="font-serif linear-text italic">Partners</span>
             </h2>
-            <p className="text-muted-foreground text-base mt-4 max-w-lg mx-auto">
+            <p className="text-muted-foreground text-md mt-4 max-w-lg mx-auto">
               Working alongside leading organisations who share our commitment
               to transforming agricultural systems across Africa.
             </p>

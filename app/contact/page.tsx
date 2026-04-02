@@ -132,7 +132,7 @@ const page = () => {
       <div className="container">
         <div className="mb-6 md:mb-12 max-w-3xl">
           <h1 className="text-primary text-3xl  ">Contact Us</h1>
-          <p className="text-muted-foreground text-md leading-relaxed  md:text-left">
+          <p className="text-muted-foreground text-md leading-relaxed max-w-md md:text-left">
             Have questions or want to learn more about the Future Farms
             Initiative? Fill out the form below and we'll get back to you as
             soon as possible.

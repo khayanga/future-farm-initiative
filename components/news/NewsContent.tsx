@@ -226,9 +226,12 @@ const NewsContent = () => {
                     {/* CTA */}
                     <div className="flex flex-col sm:flex-row gap-4 pt-8 border-t border-border">
                       <Link
-                        href="/contact"
+                       href="https://forms.gle/Y2NTsbFdk5rwU7Hp9"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
                       >
+
                         Apply Now <ArrowRight className="w-4 h-4" />
                       </Link>
                       <Link

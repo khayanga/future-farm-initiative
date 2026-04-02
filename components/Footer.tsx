@@ -1,4 +1,11 @@
-import { Leaf, Mail, MapPin, Phone, ArrowUpRight, Twitter, Linkedin, Instagram } from "lucide-react";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  ArrowUpRight,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,17 +21,22 @@ const navLinks = [
   { label: "Contact", href: "/contact" },
 ];
 
-const partners = ["WFF Kenya", "WFF Rwanda", "JLA"];
-
 const socials = [
-  
-  { icon: <Linkedin className="w-4 h-4" />, href: "https://www.linkedin.com/company/arbarne-agriculture-group/", label: "LinkedIn" },
-  { icon: <Instagram className="w-4 h-4" />, href: "https://www.instagram.com/futurefarms_africa?igsh=cDBheXd6MHY0emEz", label: "Instagram" },
+  {
+    icon: <Linkedin className="w-4 h-4" />,
+    href: "https://www.linkedin.com/company/arbarne-agriculture-group/",
+    label: "LinkedIn",
+  },
+  {
+    icon: <Instagram className="w-4 h-4" />,
+    href: "https://www.instagram.com/futurefarms_africa",
+    label: "Instagram",
+  },
 ];
 
 const Footer = () => (
   <footer className="relative overflow-hidden bg-teal-900 text-white">
-    {/* Dot grid texture */}
+    {/* Background effects */}
     <div
       className="absolute inset-0 opacity-[0.035] pointer-events-none"
       style={{
@@ -33,58 +45,48 @@ const Footer = () => (
       }}
     />
 
-    {/* Radial glow top-left */}
-    <div
-      className="absolute top-0 left-0 w-125 h-125 opacity-[0.07] pointer-events-none"
-      style={{
-        background: "radial-gradient(ellipse at top left, hsl(var(--primary)) 0%, transparent 70%)",
-      }}
-    />
-
-    {/* Top accent bar */}
     <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-primary via-primary/40 to-transparent" />
 
-    {/* Ghost word */}
+    {/* Ghost text */}
     <span className="absolute -bottom-4 right-0 text-[15vw] text-center font-serif font-bold text-white/2 leading-none select-none pointer-events-none pr-4 uppercase">
       Future Farms
     </span>
 
-    <div className="relative z-10 container px-8 ">
-
-      {/* ── Top section ── */}
-      <div className="grid grid-cols-1  lg:grid-cols-12 gap-12 pt-16 pb-12 border-b border-white/8 max-w-6xl mx-auto">
-
-        {/* Brand block */}
-        <div className="lg:col-span-6">
-          <div className="flex items-center gap-3 mb-2">
-            <div className=" flex items-center justify-center bg-white/90  p-2">
-              <Image src="/footer.png" alt="Logo" width={150} height={150} className="object-cover " />
+    {/* ✅ MAIN CONTAINER (MATCHES LAYOUT) */}
+    <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-6">
+      {/* ── Top Section ── */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16 pb-12 border-b border-white/10">
+        {/* Brand */}
+        <div className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left">
+          <div className="mb-4">
+            <div className="bg-white/90 p-2 inline-block">
+              <Image src="/footer.png" alt="Logo" width={140} height={140} />
             </div>
-           
           </div>
 
           <p className="text-white/70 text-sm leading-relaxed max-w-sm mb-8">
-            Redesigning Africa's agricultural systems for a future-ready tomorrow through technology, and structured transformation.
-            An initiative of the{" "}
+            Redesigning Africa's agricultural systems for a future-ready
+            tomorrow through technology and structured transformation. An
+            initiative of{" "}
             <a
               href="https://arbarnegroup.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline font-bold hover:text-primary"
             >
-              Arbarne agriculture group
+              Arbarne Agriculture Group
             </a>
           </p>
 
-          {/* Stat strip */}
-          <div className="flex flex-wrap gap-6 mb-8">
+          {/* Stats */}
+          <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-8">
             {[
               { stat: "2.5B", label: "People to feed by 2050" },
               { stat: "65%", label: "World's arable land" },
               { stat: "3", label: "Core pillars" },
             ].map((item) => (
               <div key={item.label}>
-                <p className="text-2xl font-bold font-serif gradient-text leading-none mb-0.5">
+                <p className="text-2xl font-bold font-serif mb-1">
                   {item.stat}
                 </p>
                 <p className="text-[11px] text-white/60 uppercase tracking-widest">
@@ -95,15 +97,17 @@ const Footer = () => (
           </div>
 
           {/* Socials */}
-          <div className="flex items-center gap-3">
-            <span className="text-xs text-white/60 uppercase tracking-widest mr-1">Follow</span>
+          <div className="flex items-center gap-3 justify-center lg:justify-start">
+            <span className="text-xs text-white/60 uppercase tracking-widest">
+              Follow
+            </span>
             {socials.map((s) => (
               <a
                 key={s.label}
                 href={s.href}
-                aria-label={s.label}
                 target="_blank"
-                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:border-primary/50 hover:text-primary hover:bg-primary/10 transition-all duration-200"
+                aria-label={s.label}
+                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:border-primary hover:text-primary transition"
               >
                 {s.icon}
               </a>
@@ -111,19 +115,21 @@ const Footer = () => (
           </div>
         </div>
 
-        {/* Nav links */}
-        <div className="lg:col-span-3">
-          <h4 className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-6">
+        {/* Nav */}
+        {/* Nav */}
+        <div className="lg:col-span-3 text-center lg:text-left">
+          <h4 className="text-sm font-bold text-primary uppercase tracking-widest mb-6">
             Navigate
           </h4>
-          <ul className="space-y-3">
+
+          {/* 2-column on mobile, 1 column on desktop */}
+          <ul className="grid grid-cols-2 gap-x-6 gap-y-3 justify-items-center lg:grid-cols-1 lg:justify-items-start">
             {navLinks.map((link) => (
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="group flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors duration-200"
+                  className="text-sm text-white/70 hover:text-white transition-colors duration-200"
                 >
-                  <span className="w-0 group-hover:w-3 h-px bg-primary transition-all duration-300" />
                   {link.label}
                 </Link>
               </li>
@@ -131,75 +137,57 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Contact + Partners */}
-        <div className="lg:col-span-3 flex flex-col gap-8">
-          {/* Contact */}
+        {/* Contact */}
+        <div className="lg:col-span-3 flex flex-col items-center lg:items-start text-center lg:text-left gap-8">
           <div>
-            <h4 className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-6">
+            <h4 className="text-sm font-bold text-primary uppercase tracking-widest mb-6">
               Contact
             </h4>
             <ul className="space-y-4">
-              {[
-                { icon: <Mail className="w-4 h-4" />, text: "futurefarms@arbarnegroup.com", href: "mailto:futurefarms@arbarnegroup.com" },
-                { icon: <Phone className="w-4 h-4" />, text: "+254757721222", href: "tel:+254757721222" },
-                { icon: <MapPin className="w-4 h-4" />, text: "Nairobi, Kenya ·" },
-              ].map((item) => (
-                <li key={item.text}>
-                  <a
-                    href={item.href}
-                    className=" group flex items-center  gap-3 text-sm text-white/70 hover:text-white transition-colors duration-200"
-                  >
-                    <span className="mt-0.5 w-7 h-7 rounded-full bg-white/5 group-hover:bg-primary/20 flex items-center justify-center shrink-0 text-primary transition-colors duration-200">
-                      {item.icon}
-                    </span>
-                    {item.text}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="mailto:futurefarms@arbarnegroup.com"
+                  className="flex items-center gap-3 text-sm text-white/70 hover:text-white"
+                >
+                  <Mail className="w-4 h-4" />
+                  futurefarms@arbarnegroup.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+254757721222"
+                  className="flex items-center gap-3 text-sm text-white/70 hover:text-white"
+                >
+                  <Phone className="w-4 h-4" />
+                  +254 757 721222
+                </a>
+              </li>
+              <li className="flex items-center gap-3 text-sm text-white/70">
+                <MapPin className="w-4 h-4" />
+                Nairobi, Kenya
+              </li>
             </ul>
           </div>
-
-          {/* Partners */}
-          {/* <div>
-            <h4 className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-4">
-              Implementing Partners
-            </h4>
-            <div className="flex flex-wrap gap-2">
-              {partners.map((p) => (
-                <span
-                  key={p}
-                  className="text-xs text-white/70 border border-white/10 rounded-full px-3 py-1.5 hover:border-primary/30 hover:text-white/70 transition-colors duration-200 cursor-default"
-                >
-                  {p}
-                </span>
-              ))}
-            </div>
-          </div> */}
 
           {/* CTA */}
           <Link
             href="/contact"
-            className="group inline-flex items-center gap-2 self-start text-sm font-semibold text-primary border border-primary/30 rounded-md px-5 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-200"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary border border-primary/30 px-5 py-3 rounded-md hover:bg-primary hover:text-white transition"
           >
             Become a Partner
-            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
+            <ArrowUpRight className="w-4 h-4" />
           </Link>
         </div>
       </div>
 
-      {/* ── Bottom bar ── */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-xs text-white/50 max-w-6xl mx-auto">
-        <span>© {currentYear} Future Farms Initiative. All rights reserved.</span>
-        <div className="flex items-center gap-5">
-          {["Privacy Policy", "Terms of Use"].map((item) => (
-            <Link
-              key={item}
-              href="#"
-              className="hover:text-white/60 transition-colors duration-200"
-            >
-              {item}
-            </Link>
-          ))}
+      {/* ── Bottom Bar ── */}
+      <div className="flex flex-col items-center justify-center gap-4 py-6 text-sm text-white/50 text-center">
+        <span>
+          © {currentYear} Future Farms Initiative. All rights reserved.
+        </span>
+        <div className="flex gap-5">
+          <Link href="#">Privacy Policy</Link>
+          <Link href="#">Terms of Use</Link>
         </div>
       </div>
     </div>

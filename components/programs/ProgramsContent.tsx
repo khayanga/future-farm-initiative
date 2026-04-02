@@ -187,7 +187,9 @@ const ProgramsContent = () => {
                       </ul>
 
                       <Link
-                        href="/contact"
+                        href="https://forms.gle/Y2NTsbFdk5rwU7Hp9"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all duration-200"
                       >
                         Enroll in this program
