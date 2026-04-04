@@ -75,7 +75,7 @@ const positions = [
   title: "Market-Oriented Production",
   summary: "We promote production systems driven by real market demand.",
   detail:
-    "Farms that produce without a clear market strategy leave value on the table. We support farmers in aligning their production with structured market demand, ensuring they grow what sells, meet quality standards, and access reliable buyers.",
+    "Farms that produce with a clear market strategy leave value on the table. We support farmers in aligning their production with structured market demand, ensuring they grow what sells, meet quality standards, and access reliable buyers.",
   tag: "Market Access",
   },
   {
