@@ -70,13 +70,13 @@ const positions = [
     tag: "Workforce Development",
   },
   {
-    number: "07",
-    icon: <BarChart2 className="w-5 h-5" />,
-    title: "Market-Oriented Production & Investor Readiness",
-    summary: "We promote market-oriented production and investor readiness.",
-    detail:
-      "Farms that produce without a clear market strategy leave value on the table. We champion production systems aligned to structured market demand, and we ensure that farmers are financially literate, investment-ready, and equipped to attract and responsibly manage capital.",
-    tag: "Market Access",
+  number: "07",
+  icon: <BarChart2 className="w-5 h-5" />,
+  title: "Market-Oriented Production",
+  summary: "We promote production systems driven by real market demand.",
+  detail:
+    "Farms that produce without a clear market strategy leave value on the table. We support farmers in aligning their production with structured market demand, ensuring they grow what sells, meet quality standards, and access reliable buyers.",
+  tag: "Market Access",
   },
   {
     number: "08",
