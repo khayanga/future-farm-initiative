@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -11,6 +12,7 @@ const testimonials = [
     name: "Francis Onyango",
     role: "Founder & CEO",
     location: "Nairobi, Kenya",
+    link:"https://mkulimascore360.com/",
     program: "Mkulima Score 360",
     image: "/francis.jpg",
     initials: "FO",
@@ -21,6 +23,7 @@ const testimonials = [
     name: "Mourine Mwangi ",
     role: "Food safety auditor",
     location: "Nairobi, Kenya",
+    link:"https://atenfields.co.ke/",
     program: "Atenfields Kenya",
     image: "/mourine.jpg",
     initials: "MM",
@@ -29,9 +32,10 @@ const testimonials = [
     quote:
       "We appreciate the strong foundation Future Farms Initiative is building in advancing farmer-centered agriculture. Our innovation complements this mission by turning sustainable farming into a measurable and monetizable opportunity, ensuring farmers benefit directly from climate action.",
     name: "Martha Mukai",
-    role: "Founder | CEO",
+    role: "Founder & CEO",
     location: "Nairobi, Kenya",
-    program: "Mkulima Score 360",
+    link: "https://mukaiacarbonhub.com/",
+    program: "Mukaia Carbon",
     image: "/mukai.jpg",
     initials: "MM",
   },
@@ -148,7 +152,7 @@ const Testimonials = () => {
           <div className="md:max-w-sm flex flex-row lg:flex-col items-center lg:items-start gap-6">
             {/* Avatar */}
             <div className="relative shrink-0">
-              <div className="w-20 h-20 lg:w-28 lg:h-28 rounded-full overflow-hidden border-2 border-primary/40 ring-4 ring-primary/10">
+              <div className="w-20 h-25 lg:w-28 lg:h-36 rounded-full overflow-hidden border-2 border-primary/40 ring-4 ring-primary/10">
                 {t.image ? (
                   <Image
                     src={t.image}
@@ -180,9 +184,11 @@ const Testimonials = () => {
               </p>
 
               {/* Program pill */}
-              <span className="mt-3 inline-block text-[10px] font-semibold text-primary border border-primary/25 rounded-full px-3 py-1 uppercase tracking-widest">
-                {t.program}
-              </span>
+              <Link href={t.link} target="_blank" rel="noopener noreferrer">
+                <span className="mt-3 inline-block text-[10px] font-semibold text-primary border border-primary/25 rounded-full px-3 py-1 uppercase tracking-widest hover:bg-primary/10 transition cursor-pointer">
+                  {t.program}
+                </span>
+              </Link>
             </div>
           </div>
 
