@@ -46,7 +46,7 @@ const Banner = () => {
               asChild
             >
               <Link href="/service">
-                Explore Our Work
+                Explore Our Services
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
@@ -56,7 +56,7 @@ const Banner = () => {
               className="rounded-md px-8 py-6 text-base border-white/60 text-white bg-white/20"
               asChild
             >
-              <Link href="/advocacy">Our Story</Link>
+              <Link href="/advocacy">Our Advocacy</Link>
             </Button>
           </div>
         </ScrollReveal>

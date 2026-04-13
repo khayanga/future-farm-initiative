@@ -46,7 +46,7 @@ const NewsBanner = () => {
               asChild
             >
               <Link href="/service">
-                Explore Our Work
+                Explore Our Services
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>

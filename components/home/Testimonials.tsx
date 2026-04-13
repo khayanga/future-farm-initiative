@@ -15,26 +15,26 @@ const testimonials = [
     image: "/francis.jpg",
     initials: "FO",
   },
-//   {
-//     quote:
-//       "The Future Farms Initiative is playing a critical role in bridging the gap between smallholder farmers and the resources they need to thrive. As we build MkulimaScore to unlock access to finance through alternative data, we see strong alignment with this vision making farmers more visible, bankable, and fully integrated into modern agricultural systems.",
-//     name: "Francis Onyango",
-//     role: "CEO",
-//     location: "Nairobi, Kenya",
-//     program: "Mkulima Score 360",
-//     image: "/francis.jpg",
-//     initials: "FO",
-//   },
-//   {
-//     quote:
-//       "The Future Farms Initiative is playing a critical role in bridging the gap between smallholder farmers and the resources they need to thrive. As we build MkulimaScore to unlock access to finance through alternative data, we see strong alignment with this vision making farmers more visible, bankable, and fully integrated into modern agricultural systems.",
-//     name: "Francis Onyango",
-//     role: "CEO",
-//     location: "Nairobi, Kenya",
-//     program: "Mkulima Score 360",
-//     image: "/francis.jpg",
-//     initials: "FO",
-//   },
+  {
+    quote:
+      "I appreciate the Future Farms Initiative’s focus on building resilient communities through regenerative agriculture. Their farmer-centered approach is timely and essential for Africa’s food systems. Beyond sustainability, strong systems for safety, quality, and market readiness are key. FFI stands out in bridging this gap through linking responsible farming with market standards to drive trust, value, and transformation from farm to consumer.",
+    name: "Mourine Mwangi ",
+    role: "Food safety auditor",
+    location: "Nairobi, Kenya",
+    program: "Atenfields Kenya",
+    image: "/mourine.jpg",
+    initials: "MM",
+  },
+  {
+    quote:
+      "We appreciate the strong foundation Future Farms Initiative is building in advancing farmer-centered agriculture. Our innovation complements this mission by turning sustainable farming into a measurable and monetizable opportunity, ensuring farmers benefit directly from climate action.",
+    name: "Martha Mukai",
+    role: "Founder | CEO",
+    location: "Nairobi, Kenya",
+    program: "Mkulima Score 360",
+    image: "/mukai.jpg",
+    initials: "MM",
+  },
   
   
   
@@ -112,7 +112,7 @@ const Testimonials = () => {
               Voices from the Industry
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              The People Behind{" "}
+              The people behind the{" "}
               <span className=" text-primary">
                 great transition
               </span>

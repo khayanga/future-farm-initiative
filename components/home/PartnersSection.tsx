@@ -22,10 +22,17 @@ const partners: Partner[] = [
     href: "https://jacobsladder.africa/who-we-are/",
     country: "Kenya",
   },
+
    {
     name: "Mkulima Score",
     logo: "/mkulima.jpg",
     href: "https://mkulimascore360.com/",
+    country: "Kenya",
+  },
+  {
+    name: "Mukaia Carbon",
+    logo: "/mukai-logo.png",
+    href: "https://mukaiacarbonhub.com/",
     country: "Kenya",
   },
 ];
