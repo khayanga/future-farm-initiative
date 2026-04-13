@@ -60,10 +60,10 @@ const TeamSection = () => {
             </div>
 
             {/* Countries Card */}
-            <div className="p-7 rounded-2xl bg-background border border-border shadow-sm hover:shadow-lg transition">
+            <div className="p-7 rounded-2xl bg-teal-900  shadow-sm hover:shadow-lg transition">
 
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Across 5 Countries
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Across the EAC Community
               </h3>
 
               {/* Flags */}
