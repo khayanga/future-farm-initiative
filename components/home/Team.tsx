@@ -48,17 +48,41 @@ const TeamSection = () => {
             <div className="p-7 rounded-2xl bg-background border border-border shadow-sm hover:shadow-lg transition relative overflow-hidden">
               
               {/* subtle glow */}
+            <div className="relative p-6 rounded-2xl bg-card shadow-sm border border-border overflow-hidden">
+              {/* background blur */}
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 blur-3xl rounded-full" />
-
-              <h3 className="text-4xl font-bold text-primary mb-2">
+            
+              {/* content */}
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                 <div>
+                <h3 className="text-4xl font-bold text-primary mb-2">
                 300+
               </h3>
-
-              <p className="text-sm font-semibold text-foreground">
+            
+              <p className="text-sm font-semibold text-foreground mb-4">
                 Farmers Onboarded
               </p>
-            </div>
+              </div>
 
+              <div>
+                 <a
+                href="https://forms.gle/H2kVgdNHtng5DHUR7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-md font-medium px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition"
+              >
+                Join Initiative
+              </a>
+                
+              </div>
+              </div>
+
+             
+              
+            
+              {/* CTA button */}
+             
+            </div>
             {/* Countries Card */}
             <div className="p-7 rounded-2xl bg-teal-900  shadow-sm hover:shadow-lg transition">
 
