@@ -1,4 +1,4 @@
-import Image from "next/image";
+5import Image from "next/image";
 import { Button } from "../ui/button";
 
 const stats = [
@@ -76,7 +76,7 @@ const TeamSection = () => {
                     rel="noopener noreferrer"
                     className="whitespace-nowrap"
                   >
-                    Join Initiative 
+                    Join Farmers Community
                   </a>
                 </Button>
 
