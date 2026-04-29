@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 const Banner = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden mt-3 rounded-2xl">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden rounded-2xl mt-3">
       {/* Background */}
       <div className="absolute inset-0">
         <Image
@@ -21,7 +21,7 @@ const Banner = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-12 py-24 text-center">
+      <div className="relative  z-10 max-w-4xl mx-auto px-6 lg:px-12 py-24 text-center">
         <ScrollReveal delay={0.1}>
           <h1 className="text-4xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold text-white leading-tight mb-6">
             Facilitating the Transition to{" "}
