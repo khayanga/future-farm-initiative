@@ -63,7 +63,7 @@ const TeamSection = () => {
                     300+
                   </h3>
 
-                  <p className="text-lg font-semibold text-foreground">
+                  <p className="text-lg font-semibold text-foreground/70">
                     Farmers Onboarded
                   </p>
                 </div>
