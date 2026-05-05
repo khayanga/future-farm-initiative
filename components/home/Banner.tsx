@@ -56,7 +56,7 @@ const Banner = () => {
               className="rounded-md px-8 py-6 text-base border-white/60 text-white bg-white/20"
               asChild
             >
-              <Link href="/advocacy">Our Advocacy</Link>
+              <Link href="/advocacy">Future Farms Framework</Link>
             </Button>
           </div>
         </ScrollReveal>
