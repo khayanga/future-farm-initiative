@@ -24,7 +24,7 @@ const navLinks = [
 const socials = [
   {
     icon: <Linkedin className="w-4 h-4" />,
-    href: "https://www.linkedin.com/company/arbarne-agriculture-group/",
+    href: "https://www.linkedin.com/showcase/future-farms-initiative/",
     label: "LinkedIn",
   },
   {
@@ -180,7 +180,7 @@ const Footer = () => (
         </div>
       </div>
 
-      {/* ── Bottom Bar ── */}
+      
       <div className="flex flex-col items-center justify-center gap-4 py-6 text-sm text-white/50 text-center">
         <span>
           © {currentYear} Future Farms Initiative. All rights reserved.
