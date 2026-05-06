@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import React from "react";
 import Image from "next/image";
+import ThemeBanner from "./ThemeBannner";
 
 const Content = () => {
 
@@ -66,8 +67,10 @@ const Content = () => {
             </div>
           </div>
 
+          <ThemeBanner/>
+
           {/* Intro strip */}
-          <div className="bg-teal-900 px-8 py-12 mt-14 md:mt-16 lg:mt-28 rounded-md mx-2">
+          <div className="bg-teal-950 px-8 py-12 mt-14 md:mt-16 lg:mt-28 rounded-md mx-2">
             <div className="container flex flex-col md:flex-row md:items-center md:justify-between gap-6">
 
               {/* Left */}

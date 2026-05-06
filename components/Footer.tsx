@@ -35,7 +35,7 @@ const socials = [
 ];
 
 const Footer = () => (
-  <footer className="relative overflow-hidden bg-teal-900 text-white">
+  <footer className="relative overflow-hidden bg-teal-950 text-white">
     {/* Background effects */}
     <div
       className="absolute inset-0 opacity-[0.035] pointer-events-none"

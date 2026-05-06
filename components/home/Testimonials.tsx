@@ -80,7 +80,7 @@ const Testimonials = () => {
   const t = testimonials[active];
 
   return (
-    <section className="relative mx-auto overflow-hidden bg-teal-900 px-8 py-12 mb-16 mt-10 md:mt-16 rounded-md">
+    <section className="relative mx-auto overflow-hidden bg-teal-950 px-8 py-12 mb-16 mt-10 md:mt-16 rounded-md">
       {/* Dot grid */}
       <div
         className="absolute inset-0 opacity-[0.035] pointer-events-none"

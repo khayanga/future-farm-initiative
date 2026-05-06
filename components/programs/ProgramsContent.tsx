@@ -227,7 +227,7 @@ const ProgramsContent = () => {
             </div>
 
             {/* Bottom CTA */}
-            <div className="mt-20 relative overflow-hidden rounded-md bg-teal-800 px-10 py-14 flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div className="mt-20 relative overflow-hidden rounded-md bg-teal-950 px-10 py-14 flex flex-col md:flex-row md:items-center justify-between gap-8">
               {/* Dot grid */}
               <div
                 className="absolute inset-0 opacity-[0.04] pointer-events-none"

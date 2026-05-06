@@ -12,8 +12,6 @@ export default function Home() {
     <main >
     <Banner/>
     <Content/>
-
-    <ThemeBanner/>
     <TeamSection/>
     <FarmersHope/>
     <Testimonials/>

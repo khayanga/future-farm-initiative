@@ -22,7 +22,7 @@ const partners = [
 
 export default function ThemeBanner() {
   return (
-    <section className="relative overflow-hidden rounded-2xl bg-teal-900 px-6 md:px-10 py-10 md:py-12 my-12">
+    <section className="relative overflow-hidden rounded-2xl bg-teal-950 px-6 md:px-10 py-10 md:py-12 my-12">
       {/* Background Texture */}
       <div
         className="absolute inset-0 opacity-[0.04]"
