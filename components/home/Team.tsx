@@ -99,7 +99,7 @@ const TeamSection = () => {
 
           {/* RIGHT COLUMN */}
           <div className="relative">
-            <div className="hidden sm:block absolute -inset-6 bg-primary/10 blur-3xl rounded-2xl pointer-events-none" />
+            {/* <div className="hidden sm:block absolute -inset-6 bg-primary/10 blur-3xl rounded-2xl pointer-events-none" /> */}
 
             <div className="relative w-full h-100 md:h-150 lg:h-full min-h-100 rounded-2xl overflow-hidden shadow-sm">
               <Image
