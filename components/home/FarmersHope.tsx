@@ -228,7 +228,7 @@ export default function FarmersHope() {
   const farmer = farmers[active];
 
   return (
-    <section className="relative overflow-hidden rounded-md border border-emerald-100 bg-muted/30  px-6 py-10 md:px-10 md:py-14 md:my-32 my-12">
+    <section className="relative overflow-hidden rounded-md border border-emerald-100 bg-muted/30  px-6 py-10 md:px-10 md:py-14 md:my-48 my-12">
       <div className="absolute -top-16 -left-10 h-48 w-48 rounded-full bg-emerald-200/20 blur-3xl" />
       <div className="absolute -bottom-16 -right-10 h-48 w-48 rounded-full bg-teal-200/20 blur-3xl" />
 
@@ -270,7 +270,7 @@ export default function FarmersHope() {
                 transition={{ duration: 0.4 }}
                 className="relative"
               >
-                <Quote className="absolute -top-2 -left-1 w-10 h-10 text-primary/10" />
+                {/* <Quote className="absolute -top-2 -left-1 w-10 h-10 text-primary/10" /> */}
                 <blockquote className="pl-6 text-base md:text-lg leading-8 text-slate-700 max-w-3xl">
                   {farmer.quote}
                 </blockquote>
