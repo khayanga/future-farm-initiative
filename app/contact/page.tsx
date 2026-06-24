@@ -28,8 +28,8 @@ const contactDetails = [
   {
     icon: <Mail className="w-5 h-5" />,
     label: "Email Us",
-    value: "futurefarms@arbarnegroup.com",
-    href: "mailto:futurefarms@arbarnegroup.com",
+    value: "futurefarmsafrica@gmail.com",
+    href: "mailto:futurefarmsafrica@gmail.com",
   },
   {
     icon: <Phone className="w-5 h-5" />,
